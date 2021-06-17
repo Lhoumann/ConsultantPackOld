@@ -1,0 +1,34 @@
+{
+  "id": "b01d221b-47b0-4571-93bf-fd2af4aa22f2",
+  "name": "Consultant Pack Abakion Legal",
+  "publisher": "Abakion",
+  "version": "18.0.202124.3",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "d36e367f-3d56-4c7d-aad0-c06498e6c069",
+      "name": "Abakion Legal",
+      "publisher": "Abakion",
+      "version": "18.0.0.0"
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "18.0.0.0",
+  "idRanges": [
+    {
+      "from": 71100,
+      "to": 71149
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://abakion.legal/",
+  "showMyCode": true,
+  "runtime": "7.0",
+  "suppressWarnings": [ "AL0603","AL0604", "AL0606", "AA0218", "AA0008", "AA0074", "AA0021", "AA0005", "AA0072", "AA0073", "AA0217", "AA0470"]
+}
