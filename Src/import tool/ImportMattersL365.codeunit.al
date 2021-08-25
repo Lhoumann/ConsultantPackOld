@@ -84,6 +84,7 @@ codeunit 71100 "Import Matters L365"
         StartTime: Time;
 
     begin
+        StartTime := Time;
         AbakionLegalSetup.FindFirst();
         RowNo := 2;
         TempExcelBuf.SetRange("Column No.", 1);
@@ -136,7 +137,7 @@ codeunit 71100 "Import Matters L365"
             Cont."No." := ValidateFieldLength(ContactNo, 20, Cont.FIELDCAPTION("No."));
 
         Cont."Company No." := ValidateFieldLength(ContactCompanyNo, 20, Cont.FIELDCAPTION("Company No."));
-        Cont.VALIDATE("Extended Name L365", ValidateFieldLength(ContactName, MAXSTRLEN(Cont."Extended Name L365"), Cont.FIELDCAPTION("Extended Name L365")));
+        Cont.Validate("Extended Name L365", CopyStr(ContactName, 1, 50));
         Cont."Search Name" := ValidateFieldLength(ContactSearchName, MAXSTRLEN(Cont."Search Name"), Cont.FIELDCAPTION("Search Name"));
         Cont."Client Reference L365" := ValidateFieldLength(ContactClientRef, MAXSTRLEN(Cont."Client Reference L365"), Cont.FIELDCAPTION("Client Reference L365"));
         Cont."Job Type Code L365" := ValidateFieldLength(ContactJobType, 20, Cont.FIELDCAPTION("Job Type Code L365"));
@@ -272,14 +273,16 @@ codeunit 71100 "Import Matters L365"
             end else
                 Cont2.MODIFY(true);
 
+            Job.GET(Cont2."No.");
+            Job."Creation Date" := Cont."Creation Date L365";
+
             if Archived then begin
                 Cont2."Contact Type L365" := AbakionLegalSetup."Archive Job Contact Type";
                 EVALUATE(Cont2."Archive Date L365", ArchivedDate);
                 Cont2.MODIFY;
-                Job.GET(Cont2."No.");
+
                 Job.ArchivedL365 := true;
                 Job."Ending Date" := Cont2."Archive Date L365";
-                Job.MODIFY;
 
                 ArchiveLog.RESET;
                 ArchiveLog.SETRANGE("Job ID", Cont2."No.");
@@ -309,6 +312,13 @@ codeunit 71100 "Import Matters L365"
                 ArchiveLog."Security Set ID" := Cont2."Security Set ID L365";
                 ArchiveLog.Comment := Text0106;
                 ArchiveLog.INSERT;
+            end;
+            Job.Modify();
+
+            //Handle long names
+            if StrLen(ContactName) > 50 then begin
+                Cont2.Validate("Extended Name L365", ContactName);
+                Cont2.Modify();
             end;
 
             //Create PartyRelations
@@ -358,6 +368,7 @@ codeunit 71100 "Import Matters L365"
             end;
             NavokatSearch.BuildSearchWords(Cont2."No.");
             Cont2.Find();
+            Cont2."Creation Date L365" := Cont."Creation Date L365";
             Cont2.Modify(true);
         end else
             NoOfErrors += 1;

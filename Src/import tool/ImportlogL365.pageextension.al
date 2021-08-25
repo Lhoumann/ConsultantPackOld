@@ -52,5 +52,16 @@ pageextension 71101 "Import Log L365" extends "Importlog L365"
                 end;
             }
         }
+        addlast(Creation)
+        {
+            action(CloseRemCLE)
+            {
+                ApplicationArea = All;
+                Caption = 'Close Remaining CLEs'; // DAN = 'Luk restbeløb'
+                Image = Tools;
+                RunObject = Report "Close Remaining CLEs2 L365";
+
+            }
+        }
     }
 }
