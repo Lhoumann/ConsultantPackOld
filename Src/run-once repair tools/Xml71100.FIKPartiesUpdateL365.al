@@ -65,6 +65,11 @@ xmlport 71100 "FIK Parties update L365"
                                 PaymentId.FindFirst();
                                 PaymentId."Job No." := ImportedJobNo;
                                 PaymentId."Party No." := 'P' + ImportedNumber;
+                                PaymentId."Document No." := '';
+                                if Job.get(ImportedJobNo) then
+                                    PaymentId."Customer No." := Job."Bill-to Customer No."
+                                else
+                                    PaymentId."Customer No." := '';
                                 PaymentId.Modify();
                                 UpdateCount += 1;
                             end;
@@ -105,9 +110,11 @@ xmlport 71100 "FIK Parties update L365"
 
 
     var
+        Job: Record "Job";
         LineCount: Integer;
         UpdateCount: Integer;
         SkipCount: Integer;
+
 
     trigger OnPostXmlPort()
     begin
