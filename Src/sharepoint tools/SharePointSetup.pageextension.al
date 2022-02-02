@@ -22,23 +22,6 @@ pageextension 71105 SharePointSetupL365CP extends "SharePoint Setup L365"
 
                 end;
             }
-
-            action(ShowClientSecret)
-            {
-                ApplicationArea = All;
-                Caption = 'Show Client Secret'; // DAN = 'Vis Client Secret'
-                Image = UpdateXML;
-                Promoted = false;
-                Ellipsis = true;
-
-                trigger OnAction()
-                var
-                begin
-                    Message('Client Secret: %1', rec."SharePoint Secret");
-
-                end;
-
-            }
         }
     }
 }
