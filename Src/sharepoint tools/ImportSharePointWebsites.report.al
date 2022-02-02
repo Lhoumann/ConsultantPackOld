@@ -26,39 +26,20 @@ report 71100 "Import SharePoint Websites"
         end;
 
         trigger OnQueryClosePage(CloseAction: Action): Boolean
-        var
-
         begin
-            //exit(UploadIntoStream(FileSelectionMsg, '', '', FileName, InStr));
         end;
     }
 
     var
         SPSetup: Record "SharePoint Setup L365";
         SPSite: Record "SharePoint Site L365";
-        //ExcelBuf: Record "Excel Buffer" temporary;
-        //FileMgt: Codeunit "File Management";
         FileName: Text;
         InStr: InStream;
         FileSelectionMsg: Label 'Please choose the Client Id CSV file.';
 
     trigger OnPreReport()
     var
-        SheetName: Text;
     begin
-        /*
-        SPSetup.Get();
-        SPSetup.TestField("SharePoint Location");
-        SPSetup."SharePoint Location" := SPSetup."SharePoint Location".TrimEnd('/') + '/';
-        //SPSetup.TestField("Hub Site ID"); // Only required when using hubsite instead of subsites
-
-        ExcelBuf.Reset();
-        ExcelBuf.DeleteAll();
-        SheetName := ExcelBuf.SelectSheetsNameStream(InStr);
-        ExcelBuf.OpenBookStream(InStr, SheetName);
-        ExcelBuf.ReadSheet();
-        */
-
     end;
 
     trigger OnPostReport()
@@ -78,13 +59,6 @@ report 71100 "Import SharePoint Websites"
         ErrorTexts: List of [Text];
 
     begin
-        //InStr.ReadText(TextLine);
-        //Message('CSV File Name: %1,\ First ine: %2', FileName, TextLine);
-        //exit;
-        //Error('This was just a test');
-        //ExcelBuf.FindLast();
-        //MaxRowNo := ExcelBuf."Row No.";
-
         SPSetup.Get();
         SPSetup.TestField("SharePoint Location");
         SPSetup."SharePoint Location" := SPSetup."SharePoint Location".TrimEnd('/') + '/';
@@ -112,13 +86,11 @@ report 71100 "Import SharePoint Websites"
                 if TextFields.Count() < 5 then
                     Errortext := '5 comma separated fields are expected'
                 else begin
-
                     CreationTimeText := TextFields.Get(1);
                     SiteIdText := TextFields.Get(2);
                     SiteName := TextFields.Get(3); // danske bogstaver er fucked up her
                     SiteCollectionIdText := TextFields.Get(4);
                     CompanyNo := TextFields.Get(5);
-
                     If not Evaluate(CreationTime, CreationTimeText) then
                         ErrorText += StrSubstNo('Could not evaluate field 1 Creation Time as DateTime: %1. \', CreationTimeText);
                     if not Evaluate(SiteId, SiteIdText) then
@@ -131,7 +103,7 @@ report 71100 "Import SharePoint Websites"
 
                 if ErrorText <> '' then begin
                     ErrorCount += 1;
-                    if ErrorCount <= 100 then
+                    if ErrorCount <= 10 then
                         ErrorTexts.Add(StrSubstNo('Error in line no. %1 : %2 \ Line text: %3', RowNo, ErrorText, TextLine));
                 end else begin
                     SiteName := Contact.Name; // because the imported name is unknown encoding
@@ -151,6 +123,8 @@ report 71100 "Import SharePoint Websites"
                     SPSite.Validate("SharePoint Site URL", SPSetup."SharePoint Location" + SPSite."Site URL"); // Nescessary??
                     SPSite.Validate("Site Graph Full Id", SharePointHostName + ',' + SiteCollectionId + ',' + SiteId);
                     SPSite.Validate("Hub Site ID", SPSetup."Hub Site ID"); // Nescessary !!
+                    SPSite.Validate("Client Document Library", SPSetup."Client Document Repository");
+                    SPSite.Validate("Matter Document Library", SPSetup."Matter Document Repository");
                     if SiteFound then
                         SPSite.Modify()
                     else
@@ -163,7 +137,6 @@ report 71100 "Import SharePoint Websites"
             Message('%1 Site Id''s imported. %2 lines had errors. The first error was: \%3', RowNo - 1 - ErrorCount, ErrorCount, ErrorTexts.Get(1))
         else
             Message('%1 Site Id''s imported', RowNo - 1);
-
     end;
 
     [TryFunction]
