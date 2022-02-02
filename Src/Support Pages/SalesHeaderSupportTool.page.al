@@ -1,6 +1,6 @@
 page 71101 "SalesHeaderSupportTool"
 {
-    Caption = 'test';
+    Caption = 'Sales Header';
     PageType = List;
     SourceTable = "Sales Header";
 
@@ -10,6 +10,34 @@ page 71101 "SalesHeaderSupportTool"
         {
             repeater(General)
             {
+                field("No."; Rec."No.")
+                {
+                    ApplicationArea = All;
+                }
+                field("Bill-to Customer No."; Rec."Bill-to Customer No.")
+                {
+                    ApplicationArea = All;
+                }
+                field("Bill-to Contact"; Rec."Bill-to Contact")
+                {
+                    ApplicationArea = All;
+                }
+                field("Bill-to Name"; Rec."Bill-to Name")
+                {
+                    ApplicationArea = All;
+                }
+                field("No. Series"; Rec."No. Series")
+                {
+                    ApplicationArea = All;
+                }
+                field("Posting No."; Rec."Posting No.")
+                {
+                    ApplicationArea = All;
+                }
+                field("Posting No. Series"; Rec."Posting No. Series")
+                {
+                    ApplicationArea = All;
+                }
                 field("Account Invoice L365"; Rec."Account Invoice L365")
                 {
                     ApplicationArea = All;
@@ -86,10 +114,7 @@ page 71101 "SalesHeaderSupportTool"
                 {
                     ApplicationArea = All;
                 }
-                field("Bill-to Contact"; Rec."Bill-to Contact")
-                {
-                    ApplicationArea = All;
-                }
+
                 field("Bill-to Contact E-Mail L365"; Rec."Bill-to Contact E-Mail L365")
                 {
                     ApplicationArea = All;
@@ -110,10 +135,7 @@ page 71101 "SalesHeaderSupportTool"
                 {
                     ApplicationArea = All;
                 }
-                field("Bill-to Customer No."; Rec."Bill-to Customer No.")
-                {
-                    ApplicationArea = All;
-                }
+
                 field("Bill-to Customer Templ. Code"; Rec."Bill-to Customer Templ. Code")
                 {
                     ApplicationArea = All;
@@ -126,10 +148,7 @@ page 71101 "SalesHeaderSupportTool"
                 {
                     ApplicationArea = All;
                 }
-                field("Bill-to Name"; Rec."Bill-to Name")
-                {
-                    ApplicationArea = All;
-                }
+
                 field("Bill-to Name 2"; Rec."Bill-to Name 2")
                 {
                     ApplicationArea = All;
@@ -402,18 +421,12 @@ page 71101 "SalesHeaderSupportTool"
                 {
                     ApplicationArea = All;
                 }
-                field("No."; Rec."No.")
-                {
-                    ApplicationArea = All;
-                }
+
                 field("No. Printed"; Rec."No. Printed")
                 {
                     ApplicationArea = All;
                 }
-                field("No. Series"; Rec."No. Series")
-                {
-                    ApplicationArea = All;
-                }
+
                 field("No. of Archived Versions"; Rec."No. of Archived Versions")
                 {
                     ApplicationArea = All;
@@ -486,14 +499,7 @@ page 71101 "SalesHeaderSupportTool"
                 {
                     ApplicationArea = All;
                 }
-                field("Posting No."; Rec."Posting No.")
-                {
-                    ApplicationArea = All;
-                }
-                field("Posting No. Series"; Rec."Posting No. Series")
-                {
-                    ApplicationArea = All;
-                }
+
                 field("Posting from Whse. Ref."; Rec."Posting from Whse. Ref.")
                 {
                     ApplicationArea = All;
