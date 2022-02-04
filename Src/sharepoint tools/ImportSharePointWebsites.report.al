@@ -91,9 +91,9 @@ report 71100 "ImportSharePointWebsitesL365CP"
                     Errortext := '5 comma separated fields are expected'
                 else begin
                     CreationTimeText := TextFields.Get(1);
-                    SiteIdText := TextFields.Get(2);
+                    SiteCollectionIdText := TextFields.Get(2);
                     SiteName := TextFields.Get(3); // danske bogstaver er fucked up her
-                    SiteCollectionIdText := TextFields.Get(4);
+                    SiteIdText := TextFields.Get(4);
                     CompanyNo := TextFields.Get(5);
                     If not Evaluate(CreationTime, CreationTimeText) then
                         ErrorText += StrSubstNo('Could not evaluate field 1 Creation Time as DateTime: %1. \', CreationTimeText);
@@ -125,7 +125,7 @@ report 71100 "ImportSharePointWebsitesL365CP"
                     SPSite.Validate("Creation Time", CreationTime);
                     SPSite.Validate("Site ID", SiteId);
                     SPSite.Validate("SharePoint Site URL", SPSetup."SharePoint Location" + SPSite."Site URL"); // Nescessary??
-                    SPSite.Validate("Site Graph Full Id", SharePointHostName + ',' + SiteCollectionId + ',' + SiteId);
+                    SPSite.Validate("Site Graph Full Id", SharePointHostName + ',' + SiteCollectionIdText + ',' + SiteIdText);
                     SPSite.Validate("Hub Site ID", SPSetup."Hub Site ID"); // Nescessary !!
                     SPSite.Validate("Client Document Library", SPSetup."Client Document Repository");
                     SPSite.Validate("Matter Document Library", SPSetup."Matter Document Repository");
