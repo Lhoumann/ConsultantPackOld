@@ -1,4 +1,4 @@
-pageextension 71101 "Abakion Legal Import Log L365" extends "Importlog L365"
+pageextension 71107 "Abakion Legal Import Log L365" extends "Importlog L365"
 {
     actions
     {

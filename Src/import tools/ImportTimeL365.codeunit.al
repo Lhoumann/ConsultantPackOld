@@ -1,4 +1,4 @@
-codeunit 71100 "Import Time L365"
+codeunit 71101 "Import Time L365"
 {
     Permissions = tabledata "Job Ledger Entry" = rimd;
 
