@@ -32,6 +32,17 @@ page 71100 "Navokat2LegalSetupTool"
                 end;
             }
         }
+        area(Navigation)
+        {
+            action(ShowLog)
+            {
+                ApplicationArea = All;
+                Caption = 'Show Status Log';
+                RunObject = page SetupStatusLog;
+                Image = Log;
+                RunPageMode = View;
+            }
+        }
     }
 
 }

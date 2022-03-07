@@ -21,7 +21,7 @@ codeunit 71103 "Navokat2AbakionLegal"
         repeat
             RemoveDomain(Company.Name);
             CorrectUserID(Company.Name);
-            CorrectVATSetup(CompanyName);
+            CorrectVATSetup(Company.Name);
             GeneralURL(Company.Name);
             CreateWebservices(Company.Name);
             ChangeDMS(Company.Name);
@@ -45,8 +45,9 @@ codeunit 71103 "Navokat2AbakionLegal"
         UserSetup.ChangeCompany(ThisCompanyname);
         if UserSetup.FindSet() then begin
             repeat
+                UserSetup.Delete();
                 UserSetup."User ID" := BasicL365.GetSpecificUserID(UserSetup."User ID");
-                UserSetup.Modify();
+                UserSetup.Insert();
             until UserSetup.next = 0;
         end;
         log.LogEnd(LastID);
@@ -65,10 +66,11 @@ codeunit 71103 "Navokat2AbakionLegal"
             exit;
         if OutlookUserSetupL365.FindSet() then begin
             repeat
+                OutlookUserSetupL365.Delete();
                 OutlookUserSetupL365."User ID" := BasicL365.GetSpecificUserID(OutlookUserSetupL365."User ID");
                 OutlookUserSetupL365."SharePoint User Name" := SharePointSetupL365."SharePoint Default User";
                 OutlookUserSetupL365."SharePoint Password" := SharePointSetupL365."SharePoint Default Password";
-                OutlookUserSetupL365.Modify();
+                OutlookUserSetupL365.Insert();
             until OutlookUserSetupL365.Next() = 0;
         end;
         log.LogEnd(LastID);
@@ -80,8 +82,10 @@ codeunit 71103 "Navokat2AbakionLegal"
     begin
         LastID := Log.LogStart(ThisCompanyname, 3, 'GeneralURL');
         OLSetup.ChangeCompany(ThisCompanyname);
-        OLSetup."Time Web Client URL" := copystr(GetUrl(ClientType::Web, ThisCompanyname, ObjectType::Page, page::"Time Entries L365"), 1, MaxStrLen(OLSetup."Time Web Client URL"));
-        OLSetup.Modify();
+        if OLSetup.FindFirst() then begin
+            OLSetup."Time Web Client URL" := copystr(GetUrl(ClientType::Web, ThisCompanyname, ObjectType::Page, page::"Time Entries L365"), 1, MaxStrLen(OLSetup."Time Web Client URL"));
+            OLSetup.Modify();
+        end;
         log.LogEnd(LastID);
     end;
 
@@ -98,9 +102,12 @@ codeunit 71103 "Navokat2AbakionLegal"
     begin
         LastID := Log.LogStart(ThisCompanyname, 5, 'ChangeDMS');
         DocumentSetupL365.ChangeCompany(ThisCompanyname);
-        DocumentSetupL365.DMS := 'SHAREPOINT';
-        DocumentSetupL365."Document No. in File Names" := false;
-        DocumentSetupL365.Modify();
+        if DocumentSetupL365.Get() then begin
+            DocumentSetupL365.DMS := 'SHAREPOINT';
+            DocumentSetupL365."Document No. in File Names" := false;
+            DocumentSetupL365.Modify();
+        end;
+
         log.LogEnd(LastID);
     end;
 
@@ -127,6 +134,7 @@ codeunit 71103 "Navokat2AbakionLegal"
     begin
         LastID := Log.LogStart(ThisCompanyname, 7, 'UpdageLanguageCodes');
         CompanyInformation.ChangeCompany(ThisCompanyname);
+        CompanyInformation.get();
         CompanyInformation."Primary Language Code L365" := 'DK';
         CompanyInformation.Modify();
         log.LogEnd(LastID);
@@ -216,6 +224,7 @@ codeunit 71103 "Navokat2AbakionLegal"
     begin
         LastID := Log.LogStart(ThisCompanyname, 11, 'SetupLogo');
         CompanyInformation.ChangeCompany(ThisCompanyname);
+        CompanyInformation.get();
         CompanyInformation.Picture := MasterCompany.Picture;
         CompanyInformation.Modify();
         log.LogEnd(LastID);

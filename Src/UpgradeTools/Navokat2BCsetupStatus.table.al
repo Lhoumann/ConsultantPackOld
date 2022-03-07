@@ -1,6 +1,7 @@
 table 71100 "Navokat2BCsetupStatus"
 {
     DataClassification = SystemMetadata;
+    DataPerCompany = false;
 
     fields
     {
@@ -24,6 +25,7 @@ table 71100 "Navokat2BCsetupStatus"
         field(5; Lenght; Duration)
         {
             DataClassification = SystemMetadata;
+            Caption = 'Duration';
         }
         field(6; "Job Name"; Text[50])
         {
@@ -68,11 +70,12 @@ table 71100 "Navokat2BCsetupStatus"
     var
         Navokat2BCsetupStatus2: Record Navokat2BCsetupStatus;
     begin
-        Navokat2BCsetupStatus2."Company Name" := "Company Name";
+        Navokat2BCsetupStatus2."Company Name" := copystr(CompanyName, 1, MaxStrLen(Navokat2BCsetupStatus2."Company Name"));
         Navokat2BCsetupStatus2."Job Id" := Jobid;
         Navokat2BCsetupStatus2."Job Name" := copystr(JobName, 1, MaxStrLen(Navokat2BCsetupStatus2."Job Name"));
         Navokat2BCsetupStatus2.Started := CurrentDateTime;
         Navokat2BCsetupStatus2.Insert();
+        exit(Navokat2BCsetupStatus2."Entry No.")
     end;
 
     procedure LogEnd(EntryNo: Integer)
@@ -82,6 +85,8 @@ table 71100 "Navokat2BCsetupStatus"
         Navokat2BCsetupStatus2.SetRange("Entry No.", EntryNo);
         Navokat2BCsetupStatus2.FindLast();
         Navokat2BCsetupStatus2.Ended := CurrentDateTime;
+        Navokat2BCsetupStatus2.Lenght := Navokat2BCsetupStatus2.Ended - Navokat2BCsetupStatus2.Started;
+        Navokat2BCsetupStatus2.Modify();
     end;
 
 }
