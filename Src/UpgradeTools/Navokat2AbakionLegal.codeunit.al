@@ -39,15 +39,19 @@ codeunit 71103 "Navokat2AbakionLegal"
     local procedure RemoveDomain(ThisCompanyname: Text)
     var
         UserSetup: Record "User Setup";
+        UserSetup2: Record "User Setup";
+
         BasicL365: Codeunit "Basic L365";
     begin
         LastID := Log.LogStart(ThisCompanyname, 1, 'RemoveDomain');
         UserSetup.ChangeCompany(ThisCompanyname);
+        UserSetup2.ChangeCompany(ThisCompanyname);
         if UserSetup.FindSet() then begin
             repeat
                 UserSetup.Delete();
-                UserSetup."User ID" := BasicL365.GetSpecificUserID(UserSetup."User ID");
-                UserSetup.Insert();
+                UserSetup2 := UserSetup;
+                UserSetup2."User ID" := BasicL365.GetSpecificUserID(UserSetup."User ID");
+                UserSetup2.Insert();
             until UserSetup.next = 0;
         end;
         log.LogEnd(LastID);
@@ -57,20 +61,23 @@ codeunit 71103 "Navokat2AbakionLegal"
     var
         SharePointSetupL365: Record "SharePoint Setup L365";
         OutlookUserSetupL365: Record "Outlook User Setup L365";
+        OutlookUserSetup2L365: Record "Outlook User Setup L365";
         BasicL365: Codeunit "Basic L365";
     begin
         LastID := Log.LogStart(ThisCompanyname, 2, 'CorrectUserID');
         SharePointSetupL365.ChangeCompany(ThisCompanyname);
         OutlookUserSetupL365.ChangeCompany(ThisCompanyname);
+        OutlookUserSetup2L365.ChangeCompany(ThisCompanyname);
         if not SharePointSetupL365.get() then
             exit;
         if OutlookUserSetupL365.FindSet() then begin
             repeat
                 OutlookUserSetupL365.Delete();
-                OutlookUserSetupL365."User ID" := BasicL365.GetSpecificUserID(OutlookUserSetupL365."User ID");
-                OutlookUserSetupL365."SharePoint User Name" := SharePointSetupL365."SharePoint Default User";
-                OutlookUserSetupL365."SharePoint Password" := SharePointSetupL365."SharePoint Default Password";
-                OutlookUserSetupL365.Insert();
+                OutlookUserSetup2L365 := OutlookUserSetupL365;
+                OutlookUserSetup2L365."User ID" := BasicL365.GetSpecificUserID(OutlookUserSetupL365."User ID");
+                OutlookUserSetup2L365."SharePoint User Name" := SharePointSetupL365."SharePoint Default User";
+                OutlookUserSetup2L365."SharePoint Password" := SharePointSetupL365."SharePoint Default Password";
+                OutlookUserSetup2L365.Insert();
             until OutlookUserSetupL365.Next() = 0;
         end;
         log.LogEnd(LastID);
