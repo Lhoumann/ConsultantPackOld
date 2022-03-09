@@ -334,15 +334,19 @@ codeunit 71103 "Navokat2AbakionLegal"
 
     local procedure TransferMastertoSlaveCompanies(ThisCompanyname: Text)
     var
-        TemplateL365: Record TemplateL365:
+        TemplateL365: Record TemplateL365;
         DataSourceHeaderL365: Record "Data Source Header L365";
         DataSourceFilterLineL365: Record "Data Source Filter Line L365";
         DataSourceLineL365: Record "Data Source Line L365";
+        CustomReportLayout: Record "Custom Report Layout";
+        ReportLayoutSelection: Record "Report Layout Selection";
 
-        MTemplateL365: Record TemplateL365:
+        MTemplateL365: Record TemplateL365;
         MDataSourceHeaderL365: Record "Data Source Header L365";
         MDataSourceFilterLineL365: Record "Data Source Filter Line L365";
         MDataSourceLineL365: Record "Data Source Line L365";
+        MCustomReportLayout: Record "Custom Report Layout";
+        MReportLayoutSelection: Record "Report Layout Selection";
     begin
         LastID := Log.LogStart(ThisCompanyname, 15, 'Transfer2OtherCompanies');
 
@@ -350,11 +354,15 @@ codeunit 71103 "Navokat2AbakionLegal"
         MDataSourceHeaderL365.ChangeCompany(MasterCompanyName);
         MDataSourceFilterLineL365.ChangeCompany(MasterCompanyName);
         MDataSourceLineL365.ChangeCompany(MasterCompanyName);
+        MReportLayoutSelection.ChangeCompany(MasterCompanyName);
+        MCustomReportLayout.ChangeCompany(MasterCompanyName);
 
         TemplateL365.ChangeCompany(ThisCompanyname);
         DataSourceHeaderL365.ChangeCompany(ThisCompanyname);
         DataSourceFilterLineL365.ChangeCompany(ThisCompanyname);
         DataSourceLineL365.ChangeCompany(ThisCompanyname);
+        ReportLayoutSelection.ChangeCompany(ThisCompanyname);
+        CustomReportLayout.ChangeCompany(ThisCompanyname);
 
         if MTemplateL365.FindSet() then begin
             repeat
@@ -384,6 +392,20 @@ codeunit 71103 "Navokat2AbakionLegal"
                 if not DataSourceLineL365.Insert() then
                     DataSourceLineL365.Modify();
             until MDataSourceLineL365.Next() = 0;
+        end;
+        if MCustomReportLayout.FindSet() then begin
+            repeat
+                CustomReportLayout := MCustomReportLayout;
+                if not CustomReportLayout.Insert() then
+                    CustomReportLayout.Modify();
+            until MCustomReportLayout.Next() = 0;
+        end;
+        if MReportLayoutSelection.FindSet() then begin
+            repeat
+                ReportLayoutSelection := MReportLayoutSelection;
+                if not ReportLayoutSelection.Insert() then
+                    ReportLayoutSelection.Modify();
+            until MReportLayoutSelection.next = 0;
         end;
 
         Log.LogEnd(LastID);
