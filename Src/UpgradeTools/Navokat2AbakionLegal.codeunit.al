@@ -8,10 +8,10 @@ codeunit 71103 "Navokat2AbakionLegal"
             LogoCompanyInf.ChangeCompany(LogoCompany.Name);
             LogoCompanyInf.get();
             if LogoCompanyInf.MasterCompany then
-                LogoCompanyName := LogoCompany.Name;
+                MasterCompanyName := LogoCompany.Name;
 
-        until (LogoCompany.next = 0) or (LogoCompanyName <> '');
-        LogoCompany.get(LogoCompanyName);
+        until (LogoCompany.next = 0) or (MasterCompanyName <> '');
+        LogoCompany.get(MasterCompanyName);
         LogoCompanyInf.ChangeCompany(LogoCompany.Name);
         LogoCompanyInf.get();
         LogoCompanyInf.CalcFields(Picture);
@@ -33,6 +33,7 @@ codeunit 71103 "Navokat2AbakionLegal"
             UpdateDictionary(Company.Name);
             CreateMissingTimeEntry(Company.Name);
             UpdateAllSearchFields(Company.Name);
+            TransferMastertoSlaveCompanies((Company.Name));
         until Company.Next() = 0;
     end;
 
@@ -125,7 +126,7 @@ codeunit 71103 "Navokat2AbakionLegal"
         LastID := Log.LogStart(ThisCompanyname, 6, 'UpdateISOCodes');
         Language.ChangeCompany(ThisCompanyname);
         if Language.get('DK') then begin
-            Language."ISO Language Code L365" := 'DK-DK';
+            Language."ISO Language Code L365" := 'DA-DK';
             Language.Modify();
         end;
         if Language.get('ENU') then begin
@@ -199,9 +200,9 @@ codeunit 71103 "Navokat2AbakionLegal"
         SetupUpOneReport(ThisCompanyname, enum::"Report Selection Usage"::"Fee Statement", 6065375);
         SetupUpOneReport(ThisCompanyname, Enum::"Report Selection Usage"::Liability, 6065405);
         SetupUpOneReport(ThisCompanyname, Enum::"Report Selection Usage"::LiabilityReconsiliation, 6065808);
-        SetupUpOneReport(ThisCompanyname, Enum::"Report Selection Usage"::"S.Cr.Memo", 50042);
-        SetupUpOneReport(ThisCompanyname, Enum::"Report Selection Usage"::"S.Invoice", 50041);
-        SetupUpOneReport(ThisCompanyname, Enum::"Report Selection Usage"::"S.Test", 50040);
+        SetupUpOneReport(ThisCompanyname, Enum::"Report Selection Usage"::"S.Cr.Memo", 6195017);
+        SetupUpOneReport(ThisCompanyname, Enum::"Report Selection Usage"::"S.Invoice", 6195016);
+        SetupUpOneReport(ThisCompanyname, Enum::"Report Selection Usage"::"S.Test", 6195015);
         SetupUpOneReport(ThisCompanyname, Enum::"Report Selection Usage"::"Label", 6065463);
         SetupUpOneReport(ThisCompanyname, Enum::"Report Selection Usage"::"Label with part", 6065464);
         SetupUpOneReport(ThisCompanyname, Enum::"Report Selection Usage"::"Inv. Amt.", 6065478);
@@ -331,11 +332,68 @@ codeunit 71103 "Navokat2AbakionLegal"
         if StartSession(id, codeunit::UpdateAllSearchField4AllComp, ThisCompanyname) then;
     end;
 
+    local procedure TransferMastertoSlaveCompanies(ThisCompanyname: Text)
+    var
+        TemplateL365: Record TemplateL365:
+        DataSourceHeaderL365: Record "Data Source Header L365";
+        DataSourceFilterLineL365: Record "Data Source Filter Line L365";
+        DataSourceLineL365: Record "Data Source Line L365";
+
+        MTemplateL365: Record TemplateL365:
+        MDataSourceHeaderL365: Record "Data Source Header L365";
+        MDataSourceFilterLineL365: Record "Data Source Filter Line L365";
+        MDataSourceLineL365: Record "Data Source Line L365";
+    begin
+        LastID := Log.LogStart(ThisCompanyname, 15, 'Transfer2OtherCompanies');
+
+        MTemplateL365.ChangeCompany(MasterCompanyName);
+        MDataSourceHeaderL365.ChangeCompany(MasterCompanyName);
+        MDataSourceFilterLineL365.ChangeCompany(MasterCompanyName);
+        MDataSourceLineL365.ChangeCompany(MasterCompanyName);
+
+        TemplateL365.ChangeCompany(ThisCompanyname);
+        DataSourceHeaderL365.ChangeCompany(ThisCompanyname);
+        DataSourceFilterLineL365.ChangeCompany(ThisCompanyname);
+        DataSourceLineL365.ChangeCompany(ThisCompanyname);
+
+        if MTemplateL365.FindSet() then begin
+            repeat
+                TemplateL365 := MTemplateL365;
+                if not TemplateL365.Insert() then
+                    TemplateL365.Modify();
+            until MTemplateL365.Next() = 0;
+        end;
+
+        if MDataSourceHeaderL365.FindSet() then begin
+            repeat
+                DataSourceHeaderL365 := MDataSourceHeaderL365;
+                if not DataSourceHeaderL365.Insert() then
+                    DataSourceHeaderL365.Modify();
+            until MDataSourceHeaderL365.Next() = 0;
+        end;
+        if MDataSourceFilterLineL365.FindSet() then begin
+            repeat
+                DataSourceFilterLineL365 := MDataSourceFilterLineL365;
+                if not DataSourceFilterLineL365.Insert() then
+                    DataSourceFilterLineL365.Modify();
+            until MDataSourceFilterLineL365.Next() = 0;
+        end;
+        if MDataSourceLineL365.FindSet() then begin
+            repeat
+                DataSourceLineL365 := MDataSourceLineL365;
+                if not DataSourceLineL365.Insert() then
+                    DataSourceLineL365.Modify();
+            until MDataSourceLineL365.Next() = 0;
+        end;
+
+        Log.LogEnd(LastID);
+    end;
+
 
     var
         Company: Record Company;
         LogoCompany: Record Company;
-        LogoCompanyName: Text;
+        MasterCompanyName: Text;
         LogoCompanyInf: Record "Company Information";
         Log: Record Navokat2BCsetupStatus;
         LastID: Integer;

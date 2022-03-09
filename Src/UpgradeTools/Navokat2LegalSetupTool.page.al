@@ -3,7 +3,7 @@ page 71100 "Navokat2LegalSetupTool"
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Administration;
-    Caption = 'Navkokat to Abakion Legal Setup';
+    Caption = 'Navokat to Abakion Legal Setup';
 
     layout
     {
