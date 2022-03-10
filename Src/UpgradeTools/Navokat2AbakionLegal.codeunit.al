@@ -140,7 +140,7 @@ codeunit 71103 "Navokat2AbakionLegal"
     var
         CompanyInformation: Record "Company Information";
     begin
-        LastID := Log.LogStart(ThisCompanyname, 7, 'UpdageLanguageCodes');
+        LastID := Log.LogStart(ThisCompanyname, 7, 'UpdateLanguageCodes');
         CompanyInformation.ChangeCompany(ThisCompanyname);
         CompanyInformation.get();
         CompanyInformation."Primary Language Code L365" := 'DK';
@@ -409,26 +409,26 @@ codeunit 71103 "Navokat2AbakionLegal"
             until MDataSourceLineL365.Next() = 0;
         end;
         //Only for master company, datapercompany = false
-        if ThisCompanyname = MasterCompanyName then begin
-            MCustomReportLayout.SetRange("Company Name", MasterCompanyName);
-            if MCustomReportLayout.FindSet() then begin
-                repeat
-                    CustomReportLayout := MCustomReportLayout;
-                    CustomReportLayout."Company Name" := ThisCompanyname;
-                    if not CustomReportLayout.Insert() then
-                        CustomReportLayout.Modify();
-                until MCustomReportLayout.Next() = 0;
-            end;
-            MReportLayoutSelection.SetRange("Company Name", MasterCompanyName);
-            if MReportLayoutSelection.FindSet() then begin
-                repeat
-                    ReportLayoutSelection := MReportLayoutSelection;
-                    ReportLayoutSelection."Company Name" := ThisCompanyname;
-                    if not ReportLayoutSelection.Insert() then
-                        ReportLayoutSelection.Modify();
-                until MReportLayoutSelection.next = 0;
-            end;
+
+        MCustomReportLayout.SetRange("Company Name", MasterCompanyName);
+        if MCustomReportLayout.FindSet() then begin
+            repeat
+                CustomReportLayout := MCustomReportLayout;
+                CustomReportLayout."Company Name" := ThisCompanyname;
+                if not CustomReportLayout.Insert() then
+                    CustomReportLayout.Modify();
+            until MCustomReportLayout.Next() = 0;
         end;
+        MReportLayoutSelection.SetRange("Company Name", MasterCompanyName);
+        if MReportLayoutSelection.FindSet() then begin
+            repeat
+                ReportLayoutSelection := MReportLayoutSelection;
+                ReportLayoutSelection."Company Name" := ThisCompanyname;
+                if not ReportLayoutSelection.Insert() then
+                    ReportLayoutSelection.Modify();
+            until MReportLayoutSelection.next = 0;
+        end;
+
 
 
         Log.LogEnd(LastID);
