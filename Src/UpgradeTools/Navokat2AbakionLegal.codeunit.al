@@ -366,47 +366,70 @@ codeunit 71103 "Navokat2AbakionLegal"
 
         if MTemplateL365.FindSet() then begin
             repeat
-                TemplateL365 := MTemplateL365;
-                if not TemplateL365.Insert() then
+                TemplateL365.TransferFields(MTemplateL365);
+                if not TemplateL365.Insert() then begin
+                    TemplateL365.find('=');
+                    TemplateL365.TransferFields(MTemplateL365, false);
                     TemplateL365.Modify();
+                end;
+
+
+
             until MTemplateL365.Next() = 0;
         end;
 
         if MDataSourceHeaderL365.FindSet() then begin
             repeat
-                DataSourceHeaderL365 := MDataSourceHeaderL365;
-                if not DataSourceHeaderL365.Insert() then
+                DataSourceHeaderL365.TransferFields(MDataSourceHeaderL365);
+                if not DataSourceHeaderL365.Insert() then begin
+                    DataSourceHeaderL365.Find('=');
+                    DataSourceHeaderL365.TransferFields(MDataSourceHeaderL365, false);
                     DataSourceHeaderL365.Modify();
+                end;
             until MDataSourceHeaderL365.Next() = 0;
         end;
         if MDataSourceFilterLineL365.FindSet() then begin
             repeat
-                DataSourceFilterLineL365 := MDataSourceFilterLineL365;
-                if not DataSourceFilterLineL365.Insert() then
+                DataSourceFilterLineL365.TransferFields(MDataSourceFilterLineL365);
+                if not DataSourceFilterLineL365.Insert() then begin
+                    DataSourceFilterLineL365.find('=');
+                    DataSourceFilterLineL365.TransferFields(MDataSourceFilterLineL365, false);
                     DataSourceFilterLineL365.Modify();
+                end;
             until MDataSourceFilterLineL365.Next() = 0;
         end;
         if MDataSourceLineL365.FindSet() then begin
             repeat
-                DataSourceLineL365 := MDataSourceLineL365;
-                if not DataSourceLineL365.Insert() then
+                DataSourceLineL365.TransferFields(MDataSourceLineL365);
+                if not DataSourceLineL365.Insert() then begin
+                    DataSourceLineL365.find('=');
+                    DataSourceLineL365.TransferFields(MDataSourceLineL365, false);
                     DataSourceLineL365.Modify();
+                end;
             until MDataSourceLineL365.Next() = 0;
         end;
-        if MCustomReportLayout.FindSet() then begin
-            repeat
-                CustomReportLayout := MCustomReportLayout;
-                if not CustomReportLayout.Insert() then
-                    CustomReportLayout.Modify();
-            until MCustomReportLayout.Next() = 0;
+        //Only for master company, datapercompany = false
+        if ThisCompanyname = MasterCompanyName then begin
+            MCustomReportLayout.SetRange("Company Name", MasterCompanyName);
+            if MCustomReportLayout.FindSet() then begin
+                repeat
+                    CustomReportLayout := MCustomReportLayout;
+                    CustomReportLayout."Company Name" := ThisCompanyname;
+                    if not CustomReportLayout.Insert() then
+                        CustomReportLayout.Modify();
+                until MCustomReportLayout.Next() = 0;
+            end;
+            MReportLayoutSelection.SetRange("Company Name", MasterCompanyName);
+            if MReportLayoutSelection.FindSet() then begin
+                repeat
+                    ReportLayoutSelection := MReportLayoutSelection;
+                    ReportLayoutSelection."Company Name" := ThisCompanyname;
+                    if not ReportLayoutSelection.Insert() then
+                        ReportLayoutSelection.Modify();
+                until MReportLayoutSelection.next = 0;
+            end;
         end;
-        if MReportLayoutSelection.FindSet() then begin
-            repeat
-                ReportLayoutSelection := MReportLayoutSelection;
-                if not ReportLayoutSelection.Insert() then
-                    ReportLayoutSelection.Modify();
-            until MReportLayoutSelection.next = 0;
-        end;
+
 
         Log.LogEnd(LastID);
     end;
