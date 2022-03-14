@@ -34,6 +34,7 @@ codeunit 71103 "Navokat2AbakionLegal"
             CreateMissingTimeEntry(Company.Name);
             UpdateAllSearchFields(Company.Name);
             TransferMastertoSlaveCompanies((Company.Name));
+            UpdateAbakionLegalSetup(Company.Name);
         until Company.Next() = 0;
     end;
 
@@ -315,6 +316,24 @@ codeunit 71103 "Navokat2AbakionLegal"
         DictionaryTranslationL365.Translation := 'Faktura';
         if DictionaryTranslationL365.Insert() then;
 
+        DictionaryL365."Text string" := 'TO';
+        DictionaryL365."Search text" := 'TO';
+        if DictionaryL365.Insert() then;
+
+        DictionaryTranslationL365."Text string" := DictionaryL365."Text string";
+        DictionaryTranslationL365."Language code" := '';
+        DictionaryTranslationL365.Translation := ' ';
+        if DictionaryTranslationL365.Insert() then;
+        DictionaryTranslationL365."Text string" := DictionaryL365."Text string";
+        DictionaryTranslationL365."Language code" := 'DK';
+        DictionaryTranslationL365.Translation := ' ';
+        if DictionaryTranslationL365.Insert() then;
+        DictionaryTranslationL365."Text string" := DictionaryL365."Text string";
+        DictionaryTranslationL365."Language code" := 'ENU';
+        DictionaryTranslationL365.Translation := ' ';
+        if DictionaryTranslationL365.Insert() then;
+
+
         log.LogEnd(LastID);
     end;
 
@@ -434,6 +453,19 @@ codeunit 71103 "Navokat2AbakionLegal"
         Log.LogEnd(LastID);
     end;
 
+
+    local procedure UpdateAbakionLegalSetup(ThisCompanyname: Text)
+    var
+        AbakionLegalSetupL365: Record "AbakionLegal Setup L365";
+
+    begin
+        LastID := Log.LogStart(ThisCompanyname, 16, 'SetupLogo');
+        AbakionLegalSetupL365.ChangeCompany(ThisCompanyname);
+        AbakionLegalSetupL365.get;
+        AbakionLegalSetupL365."Show Logo on Documents" := true;
+        AbakionLegalSetupL365.Modify();
+        log.LogEnd(LastID);
+    end;
 
     var
         Company: Record Company;
