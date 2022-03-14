@@ -11,10 +11,14 @@ codeunit 71103 "Navokat2AbakionLegal"
                 MasterCompanyName := LogoCompany.Name;
 
         until (LogoCompany.next = 0) or (MasterCompanyName <> '');
+
+        if MasterCompanyName = '' then
+            Error('No master copmany');
         LogoCompany.get(MasterCompanyName);
         LogoCompanyInf.ChangeCompany(LogoCompany.Name);
         LogoCompanyInf.get();
-        LogoCompanyInf.CalcFields(Picture);
+        if LogoCompanyInf.Picture.HasValue then
+            LogoCompanyInf.CalcFields(Picture);
 
         //Update all companies
         Company.FindSet();
@@ -367,6 +371,8 @@ codeunit 71103 "Navokat2AbakionLegal"
         MCustomReportLayout: Record "Custom Report Layout";
         MReportLayoutSelection: Record "Report Layout Selection";
     begin
+        if MasterCompanyName = ThisCompanyname then
+            exit;
         LastID := Log.LogStart(ThisCompanyname, 15, 'Transfer2OtherCompanies');
 
         MTemplateL365.ChangeCompany(MasterCompanyName);
@@ -385,15 +391,14 @@ codeunit 71103 "Navokat2AbakionLegal"
 
         if MTemplateL365.FindSet() then begin
             repeat
+                if MTemplateL365."Template Layout".HasValue then
+                    MTemplateL365.CalcFields("Template Layout");
                 TemplateL365.TransferFields(MTemplateL365);
                 if not TemplateL365.Insert() then begin
                     TemplateL365.find('=');
                     TemplateL365.TransferFields(MTemplateL365, false);
                     TemplateL365.Modify();
                 end;
-
-
-
             until MTemplateL365.Next() = 0;
         end;
 
@@ -443,8 +448,13 @@ codeunit 71103 "Navokat2AbakionLegal"
             repeat
                 ReportLayoutSelection := MReportLayoutSelection;
                 ReportLayoutSelection."Company Name" := ThisCompanyname;
-                if not ReportLayoutSelection.Insert() then
-                    ReportLayoutSelection.Modify();
+                if not ReportLayoutSelection.Insert() then begin
+                    ReportLayoutSelection.Find();
+                    ReportLayoutSelection.Delete();//Due to Prim.key
+                    ReportLayoutSelection.TransferFields(MReportLayoutSelection, false);
+                    ReportLayoutSelection.Insert();
+                end;
+
             until MReportLayoutSelection.next = 0;
         end;
 
@@ -461,9 +471,10 @@ codeunit 71103 "Navokat2AbakionLegal"
     begin
         LastID := Log.LogStart(ThisCompanyname, 16, 'SetupLogo');
         AbakionLegalSetupL365.ChangeCompany(ThisCompanyname);
-        AbakionLegalSetupL365.get;
-        AbakionLegalSetupL365."Show Logo on Documents" := true;
-        AbakionLegalSetupL365.Modify();
+        if AbakionLegalSetupL365.get then begin
+            AbakionLegalSetupL365."Show Logo on Documents" := true;
+            AbakionLegalSetupL365.Modify();
+        end;
         log.LogEnd(LastID);
     end;
 
