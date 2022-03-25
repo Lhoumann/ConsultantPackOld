@@ -31,6 +31,30 @@ page 71100 "Navokat2LegalSetupTool"
 
                 end;
             }
+            action(CleanUpDoubleTimeEntries)
+            {
+                ApplicationArea = All;
+                Caption = 'Delete all TimeEntries';
+                ToolTip = 'Delete all time entries and resets Job Ledger Entries to allow re-generatoin of Time entries';
+                RunObject = codeunit CleanupDoubleTimeEntries;
+                Image = AddAction;
+                trigger OnAction()
+                begin
+
+                end;
+            }
+            /*        action(FixBlankStartTime)
+                   {
+                       ApplicationArea = All;
+                       Caption = 'Update Time Entries with Start Time';
+                       ToolTip = 'Updates Time Entries with start time from job ledger entries. No deletion. And only update if start time is blank on time entry';
+                       RunObject = codeunit TimeEntriesWithTimeStamp;
+                       Image = AddAction;
+                       trigger OnAction()
+                       begin
+
+                       end;
+                   } */
         }
         area(Navigation)
         {

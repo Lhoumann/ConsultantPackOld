@@ -39,6 +39,8 @@ codeunit 71103 "Navokat2AbakionLegal"
             UpdateAllSearchFields(Company.Name);
             TransferMastertoSlaveCompanies((Company.Name));
             UpdateAbakionLegalSetup(Company.Name);
+            UpdateTimeEntries(Company.Name);
+            UpdateEmployeeInitals(Company.Name);
         until Company.Next() = 0;
     end;
 
@@ -81,8 +83,10 @@ codeunit 71103 "Navokat2AbakionLegal"
                 OutlookUserSetupL365.Delete();
                 OutlookUserSetup2L365 := OutlookUserSetupL365;
                 OutlookUserSetup2L365."User ID" := BasicL365.GetSpecificUserID(OutlookUserSetupL365."User ID");
-                OutlookUserSetup2L365."SharePoint User Name" := SharePointSetupL365."SharePoint Default User";
-                OutlookUserSetup2L365."SharePoint Password" := SharePointSetupL365."SharePoint Default Password";
+                if SharePointSetupL365."SharePoint Default User" <> '' then begin
+                    OutlookUserSetup2L365."SharePoint User Name" := SharePointSetupL365."SharePoint Default User";
+                    OutlookUserSetup2L365."SharePoint Password" := SharePointSetupL365."SharePoint Default Password";
+                end;
                 OutlookUserSetup2L365.Insert();
             until OutlookUserSetupL365.Next() = 0;
         end;
@@ -162,12 +166,12 @@ codeunit 71103 "Navokat2AbakionLegal"
         VATPostingSetup.ChangeCompany(ThisCompanyname);
         VATPostingSetup2.ChangeCompany(ThisCompanyname);
         VATPostingSetup2.SetRange("Disburs. (Y/N) L365", true);
-        VATPostingSetup2.SetFilter("Disburs. Account L365", '<>%1', '');
+        VATPostingSetup2.SetFilter("Disburs. VAT Account L365", '<>%1', '');
         if VATPostingSetup2.FindFirst() then begin
             VATPostingSetup.SetRange("Disburs. (Y/N) L365", true);
             if VATPostingSetup.FindSet() then begin
                 repeat
-                    VATPostingSetup."Disburs. Account L365" := VATPostingSetup2."Disburs. Account L365";
+                    VATPostingSetup."Disburs. VAT Account L365" := VATPostingSetup2."Disburs. VAT Account L365";
                     VATPostingSetup.Modify();
                 until VATPostingSetup.Next() = 0;
             end;
@@ -320,20 +324,12 @@ codeunit 71103 "Navokat2AbakionLegal"
         DictionaryTranslationL365.Translation := 'Faktura';
         if DictionaryTranslationL365.Insert() then;
 
-        DictionaryL365."Text string" := 'TO';
-        DictionaryL365."Search text" := 'TO';
+        DictionaryL365."Text string" := 'DK';
+        DictionaryL365."Search text" := 'DK';
         if DictionaryL365.Insert() then;
 
         DictionaryTranslationL365."Text string" := DictionaryL365."Text string";
-        DictionaryTranslationL365."Language code" := '';
-        DictionaryTranslationL365.Translation := ' ';
-        if DictionaryTranslationL365.Insert() then;
-        DictionaryTranslationL365."Text string" := DictionaryL365."Text string";
-        DictionaryTranslationL365."Language code" := 'DK';
-        DictionaryTranslationL365.Translation := ' ';
-        if DictionaryTranslationL365.Insert() then;
-        DictionaryTranslationL365."Text string" := DictionaryL365."Text string";
-        DictionaryTranslationL365."Language code" := 'ENU';
+        DictionaryTranslationL365."Language code" := 'TO';
         DictionaryTranslationL365.Translation := ' ';
         if DictionaryTranslationL365.Insert() then;
 
@@ -389,6 +385,7 @@ codeunit 71103 "Navokat2AbakionLegal"
         ReportLayoutSelection.ChangeCompany(ThisCompanyname);
         CustomReportLayout.ChangeCompany(ThisCompanyname);
 
+        TemplateL365.DeleteAll();
         if MTemplateL365.FindSet() then begin
             repeat
                 if MTemplateL365."Template Layout".HasValue then
@@ -457,9 +454,6 @@ codeunit 71103 "Navokat2AbakionLegal"
 
             until MReportLayoutSelection.next = 0;
         end;
-
-
-
         Log.LogEnd(LastID);
     end;
 
@@ -477,6 +471,29 @@ codeunit 71103 "Navokat2AbakionLegal"
         end;
         log.LogEnd(LastID);
     end;
+
+    local procedure UpdateTimeEntries(ThisCompanyname: Text)
+    var
+        id: Integer;
+    begin
+        if StartSession(id, codeunit::TimeEntriesWithTimeStamp, ThisCompanyname) then;
+    end;
+
+    local procedure UpdateEmployeeInitals(ThisCompanyname: Text)
+    var
+        Employee: Record Employee;
+    begin
+        LastID := Log.LogStart(ThisCompanyname, 18, 'Employee Initials');
+        Employee.ChangeCompany(ThisCompanyname);
+        if Employee.FindSet() then begin
+            repeat
+                Employee.Initials := UpperCase(Employee.Initials);
+                Employee.Modify();
+            until Employee.Next() = 0;
+        end;
+        log.LogEnd(LastID);
+    end;
+
 
     var
         Company: Record Company;
