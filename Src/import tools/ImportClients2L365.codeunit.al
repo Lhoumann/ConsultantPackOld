@@ -148,7 +148,7 @@ codeunit 71111 "Import Clients2 L365"
         ContStaging."Middle Name" := ValidateFieldLength(ContactMiddleName, 50, ContStaging.FIELDCAPTION("Middle Name"));
         ContStaging."Sur name" := ValidateFieldLength(ContactLastName, 50, Cont.FIELDCAPTION(Surname));
         ContStaging."Salutation Code" := ValidateFieldLength(ContactSalutationCode, 10, ContStaging.FIELDCAPTION("Salutation Code"));
-        ContStaging.Comment := ValidateFieldLength(ContactComment, 250, ContStaging.FieldCaption(Comment))
+        ContStaging.Comment := ValidateFieldLength(ContactComment, 250, ContStaging.FieldCaption(Comment));
 
 
 
