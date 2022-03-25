@@ -1,4 +1,4 @@
-page 71103 "Import Contact Staging List"
+page 71103 "Import Cont. Stag. WsheetL365"
 {
     ApplicationArea = All;
     Caption = 'Import Contact Staging List'; //DAN= 'Import kontakter kladde'
@@ -541,7 +541,7 @@ page 71103 "Import Contact Staging List"
                     Visible = ClientRelated;
                     ApplicationArea = All;
                 }
-                
+
 
             }
         }

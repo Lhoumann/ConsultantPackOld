@@ -871,6 +871,49 @@ codeunit 71113 "ExcelImportToolMgtL365"
         end;
     end;
 
+    procedure ValidateContactRelationFields()
+
+    var
+        ContRelStaging: Record "Contact Relation Staging L365";
+        ContStaging: Record "Contact Staging L365";
+        Cont2: Record Contact;
+        ImportLog: Record "ImportLog L365";
+        AlreadyExistsErr: Label '%1 already exists and you did not allow updates.'; // DAN = '%1 findes allerede og du har ikke tilladt opdatering.'
+        UnderlyingTableErr: Label 'The Value does not exist in the underlying table or staging table.'; // DAN = 'Værdien findes ikke i den bagvedliggende tabel eller importtabel'
+    begin
+        ImportSetup.Get();
+        ImportLog.SetRange("Import Type", ImportLog."Import Type"::Matter);
+        ImportLog.SetRange("Table Name", ContRelStaging.TABLECAPTION);
+        ImportLog.DeleteAll();
+        if ContRelStaging.FindSet() then begin
+            repeat
+                ContRelStaging.Status := ContRelStaging.Status::Imported;
+
+                if not Cont2.GET(ContRelStaging."Contact 1 No.") then begin
+                    ContStaging.Reset();
+                    ContStaging.SetRange("No.", ContRelStaging."Contact 1 No.");
+                    if ContStaging.IsEmpty then begin
+                        LogError(ContStaging."Import Type"::Matter, ContRelStaging.TABLECAPTION, '', ContRelStaging."Contact 1 No.", '', ContRelStaging."Contact 2 No.", STRSUBSTNO(UnderlyingTableErr, ContRelStaging.TABLECAPTION));
+                        ContRelStaging.Status := ContRelStaging.Status::Error;
+                    end;
+
+                end;
+                if not Cont2.GET(ContRelStaging."Contact 2 No.") then begin
+                    ContStaging.Reset();
+                    ContStaging.SetRange("No.", ContRelStaging."Contact 2 No.");
+                    if ContStaging.IsEmpty then begin
+                        LogError(ContStaging."Import Type"::Matter, ContRelStaging.TABLECAPTION, '', ContRelStaging."Contact 2 No.", '', ContRelStaging."Contact 1 No.", STRSUBSTNO(UnderlyingTableErr, ContRelStaging.TABLECAPTION));
+                        ContRelStaging.Status := ContRelStaging.Status::Error;
+                    end;
+                end;
+                if ContRelStaging.Status = ContRelStaging.Status::Imported then
+                    ContRelStaging.Status := ContRelStaging.Status::OK;
+                ContRelStaging.Modify();
+
+            until ContRelStaging.Next() = 0;
+        end;
+    end;
+
     local procedure CreateRelation(Cont1: Code[20]; Cont2: Code[20]; Rel: Code[20]);
     var
         ContRel: Record "Contact Relation L365";
