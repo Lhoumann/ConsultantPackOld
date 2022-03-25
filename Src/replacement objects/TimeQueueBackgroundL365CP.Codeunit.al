@@ -1,5 +1,10 @@
-codeunit 71108 "Time Queue Background L365CP"
-//codeunit 6065423 "Time Queue Background L365"
+/// <summary>
+/// Copy of codeunit 6065423 "Time Queue Background L365" 
+/// with smalle fix of infinite loop in in OnRun.
+/// Can be used in on JobQueueENtrues until permanent fix is releasen in Abakion Legal
+/// Todo: Add index to TimeENtry table to improve performance and perhaps make the check more frequent
+/// </summary>
+codeunit 71115 "Time Queue Background L365CP"
 {
     SingleInstance = true;
     //Single Instance background worker
