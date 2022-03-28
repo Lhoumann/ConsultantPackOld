@@ -26,7 +26,8 @@ codeunit 71115 "Time Queue Background L365CP"
 
     begin
         TimeEntry.SetFilter("Synch Status", '<>%1', TimeEntry."Synch Status"::"In Synch");
-        TimeEntry.SetFilter("First Validation Error", '%1', '');
+        TimeEntry.Setrange("Validation Failed", false);
+        //TimeEntry.SetFilter("First Validation Error", '%1', '');
         if TimeEntry.FindSet() then
             repeat
                 if TimeEntryMgt.UpdateTimeEntry(TimeEntry) then begin
@@ -48,27 +49,80 @@ codeunit 71115 "Time Queue Background L365CP"
     end;
 
     procedure CheckJobQueues();
-    var
-        QueueHandler: Codeunit "Queue Handler L365";
-
     begin
-        if not QueueHandler.CheckJobQueue(codeunit::"Time Queue Background L365") then
-            QueueHandler.AddJobQueue(codeunit::"Time Queue Background L365", 5);
+        if not CheckJobQueue(codeunit::"Time Queue Background L365") then
+            AddJobQueue(codeunit::"Time Queue Background L365");
     end;
 
     procedure AddJobQueues();
-    var
-        QueueHandler: Codeunit "Queue Handler L365";
-
     begin
-        QueueHandler.AddJobQueue(codeunit::"Time Queue Background L365", 5);
+        AddJobQueue(codeunit::"Time Queue Background L365");
     end;
 
     procedure RemoveJobQueues()
+    begin
+        RemoveJobQueue(codeunit::"Time Queue Background L365");
+    end;
+
+    local procedure CheckJobQueue(CodeunitNo: Integer): Boolean
     var
-        QueueHandler: Codeunit "Queue Handler L365";
+        JobQueueEntry: Record "Job Queue Entry";
 
     begin
-        QueueHandler.RemoveJobQueue(codeunit::"Time Queue Background L365");
+        JobQueueEntry.SetRange("Object Type to Run", JobQueueEntry."Object Type to Run"::Codeunit);
+        JobQueueEntry.SetRange("Object ID to Run", CodeunitNo);
+        JobQueueEntry.SetFilter(Status, '%1|%2', JobQueueEntry.Status::Ready, JobQueueEntry.Status::"In Process");
+        exit(not JobQueueEntry.IsEmpty);
+    end;
+
+    local procedure AddJobQueue(CodeunitNo: Integer)
+    var
+        JobQueueEntry: Record "Job Queue Entry";
+
+    begin
+        JobQueueEntry.SetRange("Object Type to Run", JobQueueEntry."Object Type to Run"::Codeunit);
+        JobQueueEntry.SetRange("Object ID to Run", CodeunitNo);
+        if JobQueueEntry.FindFirst then begin
+            JobQueueEntry."No. of Minutes between Runs" := 5;
+            JobQueueEntry."Run on Mondays" := true;
+            JobQueueEntry."Run on Tuesdays" := true;
+            JobQueueEntry."Run on Wednesdays" := true;
+            JobQueueEntry."Run on Thursdays" := true;
+            JobQueueEntry."Run on Fridays" := true;
+            JobQueueEntry."Run on Saturdays" := true;
+            JobQueueEntry."Run on Sundays" := true;
+            JobQueueEntry."Recurring Job" := true;
+            JobQueueEntry."Earliest Start Date/Time" := CurrentDateTime;
+            JobQueueEntry.Modify;
+            JobQueueEntry.Restart;
+        end else begin
+            Clear(JobQueueEntry);
+            JobQueueEntry.Validate("Object Type to Run", JobQueueEntry."Object Type to Run"::Codeunit);
+            JobQueueEntry.Validate("Object ID to Run", CodeunitNo);
+            JobQueueEntry."No. of Minutes between Runs" := 5;
+            JobQueueEntry."Run on Mondays" := true;
+            JobQueueEntry."Run on Tuesdays" := true;
+            JobQueueEntry."Run on Wednesdays" := true;
+            JobQueueEntry."Run on Thursdays" := true;
+            JobQueueEntry."Run on Fridays" := true;
+            JobQueueEntry."Run on Saturdays" := true;
+            JobQueueEntry."Run on Sundays" := true;
+            JobQueueEntry."Recurring Job" := true;
+            JobQueueEntry."Earliest Start Date/Time" := CurrentDateTime;
+            JobQueueEntry.Insert(true);
+            JobQueueEntry.Restart;
+        end;
+    end;
+
+    local procedure RemoveJobQueue(CodeunitNo: Integer)
+    var
+        JobQueueEntry: Record "Job Queue Entry";
+    begin
+        JobQueueEntry.SetRange("Object Type to Run", JobQueueEntry."Object Type to Run"::Codeunit);
+        JobQueueEntry.SetRange("Object ID to Run", CodeunitNo);
+        if JobQueueEntry.FindFirst() then begin
+            JobQueueEntry.CancelTask();
+            JobQueueEntry.DeleteTask();
+        end;
     end;
 }
