@@ -1,0 +1,18 @@
+codeunit 71116 "Time Queue Events L365CP"
+{
+    [EventSubscriber(ObjectType::Table, Database::"Job Queue Entry", 'OnBeforeInsertEvent', '', true, true)]
+    local procedure OnBeforeInsertJobQueueEntry(var rec: Record "Job Queue Entry")
+    var
+        JobQueueEntry: Record "Job Queue Entry";
+    begin
+        // Insert Consultant Pack version of the codeuint in JobQueue instead of the BaseApp version.
+        if (rec."Object Type to Run" = rec."Object Type to Run"::Codeunit) and (rec."Object ID to Run" = Codeunit::"Time Queue Background L365") then begin
+            JobQueueEntry.SetRange("Object Type to Run", JobQueueEntry."Object Type to Run"::Codeunit);
+            JobQueueEntry.SetRange("Object ID to Run", Codeunit::"Time Queue Background L365CP");
+            if JobQueueEntry.IsEmpty() then
+                rec.Validate("Object ID to Run", Codeunit::"Time Queue Background L365CP")
+            else
+                rec.Validate(Status, Rec.Status::"On Hold");
+        end;
+    end;
+}
