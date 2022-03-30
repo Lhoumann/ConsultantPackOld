@@ -15,4 +15,14 @@ codeunit 71116 "Time Queue Events L365CP"
                 rec.Validate(Status, Rec.Status::"On Hold");
         end;
     end;
+
+    [EventSubscriber(ObjectType::Table, Database::"Job Queue Entry", 'OnBeforeSetStatusValue', '', true, true)]
+    local procedure OnBeforeSetStatusValue(var JobQueueEntry: Record "Job Queue Entry"; var xJobQueueEntry: Record "Job Queue Entry"; var NewStatus: Option)
+    begin
+        if (JobQueueEntry."Object Type to Run" = JobQueueEntry."Object Type to Run"::Codeunit)
+            and (JobQueueEntry."Object ID to Run" = Codeunit::"Time Queue Background L365")
+        then begin
+            NewStatus := JobQueueEntry.Status::"On Hold";
+        end;
+    end;
 }
