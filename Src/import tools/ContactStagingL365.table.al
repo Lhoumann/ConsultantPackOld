@@ -297,8 +297,8 @@ table 71101 "Contact Staging L365"
         field(75; Status; Option)
         {
             Caption = 'Status';
-            OptionMembers = "OK","Imported","Error","Warning";
-            OptionCaption = 'OK,Imported,Error,Warning';
+            OptionMembers = "OK","Imported","Error","Warning","Created","Updated";
+            OptionCaption = 'OK,Imported,Error,Warning,Created,Updated';
         }
         field(76; "Company"; Text[100])
         {
@@ -375,13 +375,31 @@ table 71101 "Contact Staging L365"
         field(94; "Salutation Code"; Text[10])
         {
             Caption = 'Salutation Code';
-        }        
+        }
+        field(100; "New No."; Code[20])
+        {
+            Caption = 'New No.';
+        }
+        field(201; "Contact Exists"; boolean)
+        {
+            Caption = 'Contact Exists';
+            FieldClass = FlowField;
+            Editable = false;
+            CalcFormula = exist(Contact where("No." = field("New No.")));
+        }
 
         field(202; "No. Of Errors"; Integer)
         {
             Caption = 'No. Of Errors';
             FieldClass = FlowField;
-            CalcFormula = count("ImportLog L365" where("Import Type" = field("Import Type"), "Primary Key" = field("No.")));
+            CalcFormula = count("ImportLog L365" where("Import Type" = field("Import Type"), "Primary Key" = field("No."), "Entry Type" = const(Error)));
+            Editable = false;
+        }
+        field(203; "No. Of Warnings"; Integer)
+        {
+            Caption = 'No. Of Warnings';
+            FieldClass = FlowField;
+            CalcFormula = count("ImportLog L365" where("Import Type" = field("Import Type"), "Primary Key" = field("No."), "Entry Type" = const(Warning)));
             Editable = false;
         }
 

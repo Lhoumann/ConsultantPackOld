@@ -24,7 +24,7 @@ table 71102 "Contact Relation Staging L365"
         {
             Caption = 'Attention';
         }
-        field(6; "Attention Phone No."; Text[50])
+        field(6; "Attention Phone No."; Text[30])
         {
             Caption = 'Attention Phone No.';
         }
@@ -65,8 +65,8 @@ table 71102 "Contact Relation Staging L365"
         field(201; Status; Option)
         {
             Caption = 'Status';
-            OptionMembers = "OK","Imported","Error","Warning";
-            OptionCaption = 'OK,Imported,Error,Warning';
+            OptionMembers = "OK","Imported","Error","Warning","Created","Updated";
+            OptionCaption = 'OK,Imported,Error,Warning,Created,Updated';
         }
 
 

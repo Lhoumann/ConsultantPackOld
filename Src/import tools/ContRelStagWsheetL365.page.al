@@ -109,6 +109,21 @@ page 71104 "Cont. Rel. Stag. Wsheet L365"
                     ExcelImportToolMgt.ValidateContactRelationFields();
                 end;
             }
+            action(CreateRelations)
+            {
+                Caption = 'Create Contact Relations';
+                Image = Create;
+                Promoted = true;
+                ApplicationArea = All;
+                trigger OnAction()
+                var
+                    ExcelImportToolMgt: Codeunit ExcelImportToolMgtL365;
+                    ContactRelationStaging: Record "Contact Relation Staging L365";
+                begin
+                    CurrPage.SetSelectionFilter(ContactRelationStaging);
+                    ExcelImportToolMgt.CreateContactRelationsFromStaging(ContactRelationStaging);
+                end;
+            }
         }
         area(Navigation)
         {

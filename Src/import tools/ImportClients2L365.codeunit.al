@@ -119,6 +119,7 @@ codeunit 71111 "Import Clients2 L365"
         ContStaging.INIT;
         ContStaging."Import Type" := ContStaging."Import Type"::Client;
         ContStaging."No." := ValidateFieldLength(ContactNo, 20, ContStaging.FIELDCAPTION("No."));
+        ContStaging."New No." := ContStaging."No.";
         ContStaging."Company No." := ContStaging."No.";
         ContStaging.Name := ValidateFieldLength(ContactName, MAXSTRLEN(ContStaging.Name), ContStaging.FIELDCAPTION(Name));
         ContStaging."Name 2" := ValidateFieldLength(ContactName2, 50, ContStaging.FIELDCAPTION("Name 2"));
@@ -235,7 +236,7 @@ codeunit 71111 "Import Clients2 L365"
             exit('');
     end;
 
-    local procedure LogError(TableCaption: Text; FieldCaption: Text; PrimaryKey: Text; FieldValue: Text; FieldValue2: Text; ErrorDescription: Text);
+    local procedure LogWarning(TableCaption: Text; FieldCaption: Text; PrimaryKey: Text; FieldValue: Text; FieldValue2: Text; ErrorDescription: Text);
     var
         ImportLog: Record "ImportLog L365";
     begin
@@ -251,6 +252,8 @@ codeunit 71111 "Import Clients2 L365"
         ImportLog."Field Value" := FieldValue;
         ImportLog."Field Value 2" := FieldValue2;
         ImportLog."Error Description" := ErrorDescription;
+        ImportLog."Entry Type" := ImportLog."Entry Type"::Warning;
+        ImportLog."Date Type Validation" := true;
         ImportLog.INSERT;
         RecordHasError := true;
     end;
@@ -260,7 +263,7 @@ codeunit 71111 "Import Clients2 L365"
         Text001: Label 'Værdien er for lang (%1). Kun %2 tegn er tilladt';
     begin
         if STRLEN(InStr) > MaxLength then begin
-            LogError(ContStaging.TABLECAPTION, Caption, ContStaging."No.", InStr, '', STRSUBSTNO(Text001, STRLEN(InStr), MaxLength));
+            LogWarning(ContStaging.TABLECAPTION, Caption, ContStaging."No.", InStr, '', STRSUBSTNO(Text001, STRLEN(InStr), MaxLength));
             exit(copystr(InStr, 1, MaxLength));
         end else
             exit(InStr);
@@ -271,7 +274,7 @@ codeunit 71111 "Import Clients2 L365"
         Text001: Label 'Værdien "%1" er ikke et tal.';
     begin
         if not EVALUATE(ReturnInt, InInteger) then
-            LogError(ContStaging.TABLECAPTION, Caption, ContStaging."No.", InInteger, '', STRSUBSTNO(Text001, InInteger));
+            LogWarning(ContStaging.TABLECAPTION, Caption, ContStaging."No.", InInteger, '', STRSUBSTNO(Text001, InInteger));
     end;
 
     local procedure ValidateisDecimal(InDecimal: Text; Caption: Text) ReturnDecimal: Decimal;
@@ -279,7 +282,7 @@ codeunit 71111 "Import Clients2 L365"
         Text001: Label 'Værdien "%1" er ikke et tal.';
     begin
         if not EVALUATE(ReturnDecimal, InDecimal) then
-            LogError(ContStaging.TABLECAPTION, Caption, ContStaging."No.", InDecimal, '', STRSUBSTNO(Text001, InDecimal));
+            LogWarning(ContStaging.TABLECAPTION, Caption, ContStaging."No.", InDecimal, '', STRSUBSTNO(Text001, InDecimal));
     end;
 
     local procedure ValidateIsDate(InDate: Text; Caption: Text) ReturnDate: Date;
@@ -287,7 +290,7 @@ codeunit 71111 "Import Clients2 L365"
         Text001: Label 'Værdien "%1" er ikke en dato.';
     begin
         if not EVALUATE(ReturnDate, InDate) then
-            LogError(ContStaging.TABLECAPTION, Caption, ContStaging."No.", InDate, '', STRSUBSTNO(Text001, InDate));
+            LogWarning(ContStaging.TABLECAPTION, Caption, ContStaging."No.", InDate, '', STRSUBSTNO(Text001, InDate));
     end;
 
     local procedure ValidateIsBoolean(InBool: Text; Caption: Text) ReturnBool: Boolean;
@@ -298,7 +301,7 @@ codeunit 71111 "Import Clients2 L365"
             if InBool = '' then
                 ReturnBool := false
             else
-                LogError(ContStaging.TABLECAPTION, Caption, ContStaging."No.", InBool, '', STRSUBSTNO(Text001, InBool));
+                LogWarning(ContStaging.TABLECAPTION, Caption, ContStaging."No.", InBool, '', STRSUBSTNO(Text001, InBool));
         end;
     end;
 }

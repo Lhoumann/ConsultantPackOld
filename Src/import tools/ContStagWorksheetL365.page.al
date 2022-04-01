@@ -1,4 +1,4 @@
-page 71103 "Import Cont. Stag. WsheetL365"
+page 71103 "Cont. Stag. WorksheetL365"
 {
     ApplicationArea = All;
     Caption = 'Import Contact Staging List'; //DAN= 'Import kontakter kladde'
@@ -38,9 +38,30 @@ page 71103 "Import Cont. Stag. WsheetL365"
                     begin
                         ImportLog.SetRange("Primary Key", "No.");
                         ImportLog.SetRange("Import Type", "Import Type");
+                        ImportLog.SetRange("Entry Type", ImportLog."Entry Type"::Error);
                         page.RunModal(page::"Importlog L365", ImportLog);
 
                     end;
+                }
+                field("No. Of Warnings"; "No. Of Warnings")
+                {
+                    ApplicationArea = All;
+                    trigger OnDrillDown()
+                    var
+                        ImportLog: Record "ImportLog L365";
+                    begin
+                        ImportLog.SetRange("Primary Key", "No.");
+                        ImportLog.SetRange("Import Type", "Import Type");
+                        ImportLog.SetRange("Entry Type", ImportLog."Entry Type"::Warning);
+                        page.RunModal(page::"Importlog L365", ImportLog);
+
+                    end;
+                }
+
+                field("Contact Exists"; "Contact Exists")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Species if Contact already exists';
                 }
                 field(Name; Rec.Name)
                 {
@@ -131,12 +152,6 @@ page 71103 "Import Cont. Stag. WsheetL365"
                     ApplicationArea = All;
                     Visible = ClientAndPartyRelated;
                 }
-                field("Billing Employee"; Rec."Billing Employee")
-                {
-                    ToolTip = 'Specifies the value of the Billing Employee field.';
-                    ApplicationArea = All;
-                    Visible = MatterReleated;
-                }
                 field("Birth Date L365"; Rec."Birth Date L365")
                 {
                     ToolTip = 'Specifies the value of the Birth Date field.';
@@ -147,6 +162,18 @@ page 71103 "Import Cont. Stag. WsheetL365"
                 {
                     ToolTip = 'Specifies the value of the Blocked field.';
                     ApplicationArea = All;
+                }
+                field("Responsible Employee"; Rec."Responsible Employee")
+                {
+                    ToolTip = 'Specifies the value of the Responsible Employee field.';
+                    ApplicationArea = All;
+                    Visible = ClientRelated;
+                }
+                field("Responsible Lawyer"; Rec."Responsible Lawyer")
+                {
+                    ToolTip = 'Specifies the value of the AnsvarligJurist field.';
+                    ApplicationArea = All;
+                    Visible = MatterReleated;
                 }
                 field("Case Worker"; Rec."Case Worker")
                 {
@@ -160,7 +187,18 @@ page 71103 "Import Cont. Stag. WsheetL365"
                     ApplicationArea = All;
                     Visible = MatterReleated;
                 }
-
+                field(Secretary; Rec.Secretary)
+                {
+                    ToolTip = 'Specifies the value of the Sekretær field.';
+                    ApplicationArea = All;
+                    Visible = MatterReleated;
+                }
+                field("Billing Employee"; Rec."Billing Employee")
+                {
+                    ToolTip = 'Specifies the value of the Billing Employee field.';
+                    ApplicationArea = All;
+                    Visible = MatterReleated;
+                }
                 field("Civil Court No. L365"; Rec."Civil Court No. L365")
                 {
                     ToolTip = 'Specifies the value of the Civil Court No. field.';
@@ -315,17 +353,18 @@ page 71103 "Import Cont. Stag. WsheetL365"
                     ApplicationArea = All;
                     Visible = MatterReleated;
                 }
-                field("Job Title"; Rec."Job Title")
-                {
-                    ToolTip = 'Specifies the value of the Job Title field.';
-                    ApplicationArea = All;
-                    Visible = MatterReleated;
-                }
+
                 field("Job Type Code L365"; Rec."Job Type Code L365")
                 {
                     ToolTip = 'Specifies the value of the Job Type Code field.';
                     ApplicationArea = All;
                     Visible = MatterReleated;
+                }
+                field("Job Title"; Rec."Job Title")
+                {
+                    ToolTip = 'Specifies the value of the Job Title field.';
+                    ApplicationArea = All;
+                    Visible = ClientAndPartyRelated;
                 }
                 field("KOB No."; Rec."KOB No.")
                 {
@@ -464,18 +503,6 @@ page 71103 "Import Cont. Stag. WsheetL365"
                     ApplicationArea = All;
                     Visible = false;
                 }
-                field("Responsible Employee"; Rec."Responsible Employee")
-                {
-                    ToolTip = 'Specifies the value of the Responsible Employee field.';
-                    ApplicationArea = All;
-                    Visible = ClientRelated;
-                }
-                field("Responsible Lawyer"; Rec."Responsible Lawyer")
-                {
-                    ToolTip = 'Specifies the value of the AnsvarligJurist field.';
-                    ApplicationArea = All;
-                    Visible = MatterReleated;
-                }
                 field("SE-nummer L365"; Rec."SE-nummer L365")
                 {
                     ToolTip = 'Specifies the value of the SE-nummer field.';
@@ -497,12 +524,6 @@ page 71103 "Import Cont. Stag. WsheetL365"
                 {
                     ToolTip = 'Specifies the value of the Search Name field.';
                     ApplicationArea = All;
-                }
-                field(Secretary; Rec.Secretary)
-                {
-                    ToolTip = 'Specifies the value of the Sekretær field.';
-                    ApplicationArea = All;
-                    Visible = MatterReleated;
                 }
                 field("Short Note L365"; Rec."Short Note L365")
                 {
@@ -541,7 +562,23 @@ page 71103 "Import Cont. Stag. WsheetL365"
                     Visible = ClientRelated;
                     ApplicationArea = All;
                 }
+                field("New No."; "New No.")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Species the No. to be used for Contact. This value overrides the original No. from import';
+                }
 
+
+
+            }
+
+        }
+        area(FactBoxes)
+        {
+            part(ImportLogFactBox; "Import Log Factbox")
+            {
+                Caption = 'Statistics';
+                ApplicationArea = All;
 
             }
         }
@@ -601,6 +638,51 @@ page 71103 "Import Cont. Stag. WsheetL365"
                 end;
 
             }
+            action(OnlyWithErrors)
+            {
+                ApplicationArea = All;
+                Caption = 'Errors';
+                ToolTip = 'Show only lines with errors';
+                Image = ErrorLog;
+                Promoted = true;
+                trigger OnAction()
+                begin
+                    SetFilter("No. Of Errors", '<>0');
+                    SetRange("No. Of Warnings");
+                    CurrPage.Update();
+                end;
+
+            }
+            action(OnlyWithWarnings)
+            {
+                ApplicationArea = All;
+                Caption = 'Warnings';
+                ToolTip = 'Show only lines with warnings';
+                Image = ErrorLog;
+                Promoted = true;
+                trigger OnAction()
+                begin
+                    SetFilter("No. Of Warnings", '<>0');
+                    SetRange("No. Of Errors");
+                    CurrPage.Update();
+                end;
+
+            }
+            action(ShowAll)
+            {
+                ApplicationArea = All;
+                Caption = 'All Lines';
+                ToolTip = 'Show only lines with or without errors or warnings';
+                Image = Cancel;
+                Promoted = true;
+                trigger OnAction()
+                begin
+                    SetRange("No. Of Errors");
+                    SetRange("No. Of Warnings");
+                    CurrPage.Update();
+                end;
+
+            }
             group(Import)
             {
                 Caption = 'Import';
@@ -653,29 +735,32 @@ page 71103 "Import Cont. Stag. WsheetL365"
                 Caption = 'Create';
                 action(CreateClients)
                 {
-                    Caption = 'Create Clients';
+                    Caption = 'Create Clients'; //DAN = 'Opret klienter'
                     ApplicationArea = All;
                     trigger OnAction()
                     begin
-                        ExcelImportToolMgtL365.CreateClientsFromStaging();
+                        CurrPage.SetSelectionFilter(Staging);
+                        ExcelImportToolMgtL365.CreateClientsFromStaging(Staging);
                     end;
                 }
                 action(CreateParties)
                 {
-                    Caption = 'Create Parties';
+                    Caption = 'Create Parties';  //DAN = 'Opret parter'
                     ApplicationArea = All;
                     trigger OnAction()
                     begin
-                        ExcelImportToolMgtL365.CreatePartiesFromStaging();
+                        CurrPage.SetSelectionFilter(Staging);
+                        ExcelImportToolMgtL365.CreatePartiesFromStaging(Staging);
                     end;
                 }
                 action(CreateMattesr)
                 {
-                    Caption = 'Create Matters';
+                    Caption = 'Create Matters'; //DAN = 'Opret sager'
                     ApplicationArea = All;
                     trigger OnAction()
                     begin
-                        ExcelImportToolMgtL365.CreateMattersFromStaging();
+                        CurrPage.SetSelectionFilter(Staging);
+                        ExcelImportToolMgtL365.CreateMattersFromStaging(Staging);
                     end;
                 }
 
@@ -694,6 +779,17 @@ page 71103 "Import Cont. Stag. WsheetL365"
                 ApplicationArea = All;
                 RunObject = page "Importlog L365";
                 Image = Log;
+                Promoted = true;
+                PromotedCategory = Report;
+            }
+            action(ImportSetup)
+            {
+                Caption = 'Import Setup';
+                ApplicationArea = All;
+                RunObject = page "Import Setup L365";
+                Image = Setup;
+                Promoted = true;
+                PromotedCategory = Process;
             }
 
         }
@@ -703,4 +799,5 @@ page 71103 "Import Cont. Stag. WsheetL365"
         ExcelImportToolMgtL365: Codeunit ExcelImportToolMgtL365;
         [InDataSet]
         ClientRelated, MatterReleated, PartyRelated, ClientAndPartyRelated : Boolean;
+        Staging: Record "Contact Staging L365";
 }

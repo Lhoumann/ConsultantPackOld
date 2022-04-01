@@ -129,6 +129,7 @@ codeunit 71112 "Import Matters2 L365"
         ContStaging.INIT;
         ContStaging."Import Type" := ContStaging."Import Type"::Matter;
         ContStaging."No." := ValidateFieldLength(ContactNo, 20, ContStaging.FIELDCAPTION("No."));
+        ContStaging."New No." := ContStaging."No.";
         ContStaging."Company No." := ValidateFieldLength(ContactCompanyNo, 20, ContStaging.FIELDCAPTION("Company No."));
         ContStaging.Name := copystr(ContactName, 1, MaxStrLen(ContStaging.Name));
         ContStaging."Extended Name" := ValidateFieldLength(ContactName, 2048, ContStaging.FIELDCAPTION("Extended Name"));
@@ -154,6 +155,10 @@ codeunit 71112 "Import Matters2 L365"
 
         ContStaging."Language Code" := ValidateFieldLength(ContactLanguageCode, 10, ContStaging.FIELDCAPTION("Language Code"));
         ContStaging.AttentionL365 := ValidateFieldLength(ContactAttention, 50, ContStaging.FIELDCAPTION(AttentionL365));
+        ContStaging.Secretary := ValidateFieldLength(SEKRETAER, 20, ContStaging.FIELDCAPTION(Secretary));
+        ContStaging."Case Worker" := ValidateFieldLength(SAGSBEH, 20, ContStaging.FIELDCAPTION("Case Worker"));
+        ContStaging."Case worker 2" := ValidateFieldLength(SAGSBEH2, 20, ContStaging.FIELDCAPTION("Case worker 2"));
+        ContStaging."Responsible Lawyer" := ValidateFieldLength(ANSVARLIG, 20, ContStaging.FIELDCAPTION("Responsible Lawyer"));
         ContStaging."Import Type" := ContStaging."Import Type"::Matter;
         if not ContStaging.Insert() then
             ContStaging.Modify();
@@ -234,7 +239,7 @@ codeunit 71112 "Import Matters2 L365"
         CreationDateTxt := GetCell(RowNo, 33);
     end;
 
-    local procedure LogError(TableCaption: Text; FieldCaption: Text; PrimaryKey: Text; FieldValue: Text; FieldValue2: Text; ErrorDescription: Text);
+    local procedure LogWarning(TableCaption: Text; FieldCaption: Text; PrimaryKey: Text; FieldValue: Text; FieldValue2: Text; ErrorDescription: Text);
     var
         ImportLog: Record "ImportLog L365";
     begin
@@ -250,6 +255,8 @@ codeunit 71112 "Import Matters2 L365"
         ImportLog."Field Value" := FieldValue;
         ImportLog."Field Value 2" := FieldValue2;
         ImportLog."Error Description" := ErrorDescription;
+        ImportLog."Entry Type" := ImportLog."Entry Type"::Warning;
+        ImportLog."Date Type Validation" := true;
         ImportLog.INSERT;
         RecordHasError := true;
     end;
@@ -259,7 +266,7 @@ codeunit 71112 "Import Matters2 L365"
         Text001: Label 'Værdien er for lang (%1). Kun %2 tegn er tilladt';
     begin
         if STRLEN(InStr) > MaxLength then begin
-            LogError(ContStaging.TABLECAPTION, Caption, ContStaging."No.", InStr, '', STRSUBSTNO(Text001, STRLEN(InStr), MaxLength));
+            LogWarning(ContStaging.TABLECAPTION, Caption, ContStaging."No.", InStr, '', STRSUBSTNO(Text001, STRLEN(InStr), MaxLength));
             exit('');
         end else
             exit(InStr);
@@ -270,7 +277,7 @@ codeunit 71112 "Import Matters2 L365"
         Text001: Label 'Værdien "%1" er ikke et tal.';
     begin
         if not EVALUATE(ReturnInt, InInteger) then
-            LogError(ContStaging.TABLECAPTION, Caption, ContStaging."No.", InInteger, '', STRSUBSTNO(Text001, InInteger));
+            LogWarning(ContStaging.TABLECAPTION, Caption, ContStaging."No.", InInteger, '', STRSUBSTNO(Text001, InInteger));
     end;
 
     local procedure ValidateisDecimal(InDecimal: Text; Caption: Text) ReturnDecimal: Decimal;
@@ -278,7 +285,7 @@ codeunit 71112 "Import Matters2 L365"
         Text001: Label 'Værdien "%1" er ikke et tal.';
     begin
         if not EVALUATE(ReturnDecimal, InDecimal) then
-            LogError(ContStaging.TABLECAPTION, Caption, ContStaging."No.", InDecimal, '', STRSUBSTNO(Text001, InDecimal));
+            LogWarning(ContStaging.TABLECAPTION, Caption, ContStaging."No.", InDecimal, '', STRSUBSTNO(Text001, InDecimal));
     end;
 
     local procedure ValidateIsDate(InDate: Text; Caption: Text) ReturnDate: Date;
@@ -286,7 +293,7 @@ codeunit 71112 "Import Matters2 L365"
         Text001: Label 'Værdien "%1" er ikke en dato.';
     begin
         if not EVALUATE(ReturnDate, InDate) then
-            LogError(ContStaging.TABLECAPTION, Caption, ContStaging."No.", InDate, '', STRSUBSTNO(Text001, InDate));
+            LogWarning(ContStaging.TABLECAPTION, Caption, ContStaging."No.", InDate, '', STRSUBSTNO(Text001, InDate));
     end;
 
     local procedure ValidateIsBoolean(InBool: Text; Caption: Text) ReturnBool: Boolean;
@@ -297,7 +304,7 @@ codeunit 71112 "Import Matters2 L365"
             if InBool = '' then
                 ReturnBool := false
             else
-                LogError(ContStaging.TABLECAPTION, Caption, ContStaging."No.", InBool, '', STRSUBSTNO(Text001, InBool));
+                LogWarning(ContStaging.TABLECAPTION, Caption, ContStaging."No.", InBool, '', STRSUBSTNO(Text001, InBool));
         end;
     end;
 
