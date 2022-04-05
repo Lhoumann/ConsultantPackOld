@@ -2,7 +2,7 @@
   "id": "b01d221b-47b0-4571-93bf-fd2af4aa22f2",
   "name": "Consultant Pack Abakion Legal",
   "publisher": "Abakion",
-  "version": "19.0.202213.5",
+  "version": "19.0.202214.1",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -30,6 +30,7 @@
   ],
   "contextSensitiveHelpUrl": "https://abakion.legal/",
   "showMyCode": true,
+  "features": ["TranslationFile"],
   "runtime": "7.0",
   "suppressWarnings": [ "AL0603","AL0604", "AL0606", "AA0218", "AA0008", "AA0074", "AA0021", "AA0005", "AA0072", "AA0073", "AA0217", "AA0470"]
 }
