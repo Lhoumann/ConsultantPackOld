@@ -1,0 +1,1817 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="da-DK" original="Consultant Pack Abakion Legal.g.xlf" tool-id="ERPLoc" product-name="n/a" product-version="n/a" build-num="n/a" request-id="46866">
+    <header>
+      <tool tool-id="ERPLoc" tool-name="ERPLoc" tool-version="1.0.173.409" tool-company="Microsoft CoreXT" />
+    </header>
+    <body>
+      <group id="body">
+        <trans-unit id="Table 2779182389 - Field 1351826026 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Attention</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Opmærksomhed</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Relation Staging L365 - Field Attention - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2779182389 - Field 2273282913 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Attention E-Email</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Attention-mail</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Relation Staging L365 - Field Attention E-mail - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2779182389 - Field 4268111634 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Attention Invoice E-Mail</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Attentionfakturas mailadresse</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Relation Staging L365 - Field Attention Invoice E-Mail - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2779182389 - Field 2623452871 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Attention Phone No.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Attention-telefonnr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Relation Staging L365 - Field Attention Phone No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2779182389 - Field 2732579989 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Block Interaction</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Bloker interaktion</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Relation Staging L365 - Field Block Interaction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2779182389 - Field 2333262746 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Contact 1No.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Kontakt 1Nr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Relation Staging L365 - Field Contact 1 No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2779182389 - Field 3275823327 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Contact 2 No.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Kontakt 2 nr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Relation Staging L365 - Field Contact 2 No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2779182389 - Field 505709262 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>GLN No.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">GLN-nr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Relation Staging L365 - Field GLN No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2779182389 - Field 2591971502 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>New Contact 1No.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ny kontakt 1nr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Relation Staging L365 - Field New Contact 1 No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2779182389 - Field 207311475 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>New Contact 2 No.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nyt kontakt 2-nr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Relation Staging L365 - Field New Contact 2 No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2779182389 - Field 2832596429 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Relation Code</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Relationskode</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Relation Staging L365 - Field Relation Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2779182389 - Field 513339096 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Status</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Relation Staging L365 - Field Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2779182389 - Field 513339096 - Property 62802879" translate="yes" xml:space="preserve">
+          <source>OK,Imported,Error,Warning,Created,Updated</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">OK,Importeret,Fejl,Advarsel,Lavet,Opdateret</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Relation Staging L365 - Field Status - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 2779182389 - Field 3001618318 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Your Reference</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Your Reference</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Relation Staging L365 - Field Your Reference - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 3168444338 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Address</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Adresse</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Address - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2306852000 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Address 2</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Adresse 2</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Address 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2906065366 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Archive Date</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Arkivdato</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Archive Date L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 4212203096 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Archive Index</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Arkivér indeks</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Archive Index - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 57370450 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Archived</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Arkiveret</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Archived - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1621764230 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Assigned Employee</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tildelt medarbejder</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Assigned Employee - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2935873462 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Attention</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Opmærksomhed</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field AttentionL365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2891120704 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Bank Account No.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Bankkontonr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Bank Account No. L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2438806315 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Bank Branch No.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Bankregistreringsnr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Bank Branch No. L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 16352507 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Billing Employee</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Faktureringsmedarbejder</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Billing Employee - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1683466127 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Birth Date</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Fødselsdato</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Birth Date L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 3543129988 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Blocked</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Blokeret</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Blocked - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 3907584462 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Sagsbehandler</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Sagsbehandler</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Case Worker - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2327306268 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Sagsbehandler2</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Sagsbehandler2</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Case worker 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 714791889 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>City</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Byen</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field City - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 645521439 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Civil Court No.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Borgerretsnr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Civil Court No. L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 3957217117 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Civil Registration No.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Registreringsnr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Civil Registration No. L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2915434885 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Client Documentation</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Klientdokumentation</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Client Documentation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1374952498 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Client Reference</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Klientreference</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Client Reference L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2790486453 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Comment</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Kommentar</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Comment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 3133801257 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Company</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Virksomhed</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Company - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1551200516 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Company No.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Virksomhedsnr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Company No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 3993128796 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Contact</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Kontakt</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Contact - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2440771828 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Contact Exists</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Kontakt findes</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Contact Exists - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 284764054 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Country/Region Code</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Lande-/områdekode</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Country/Region Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 4249183955 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Retskreds låst</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Retskreds låst</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Court Locked L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 4056374076 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Retskredsnr</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Retskredsnr</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Court No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 3935345555 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Oprettelsesdato</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Creation Date L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 4198939294 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Currency Code</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Valutakode</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Currency Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 410940989 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Customer Posting Group</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Debitorbogføringsgruppe</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Customer Posting Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 826021719 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Customer Template Code</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Debitorskabelonkode</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Customer Template Code L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1541011875 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Email</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">E-mail</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field E-Mail - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 721167439 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>EAN No.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">EAN-nr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field EAN No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 458406397 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Ending Date</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Slutdato</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Ending Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 3451045116 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Extended Name</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Udvidet navn</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Extended Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1807381932 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Fax No.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Telefax</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Fax No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2725554719 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Fin. Charge Terms Code</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Rentebetingelseskode</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Fin. Charge Terms Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 3444679095 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>First Name</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Fornavn</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field First Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1209362222 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Former No.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tidligere nr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Former No. L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 633819257 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Gen. Bus. Posting Group</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Virksomhedsbogføringsgruppe</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Gen. Bus. Posting Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1303377601 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Global Dimension 1 Code</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Global dimension 1-kode</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Global Dimension 1 Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1337243520 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Global Dimension 2 Code</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Global dimension 2-kode</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Global Dimension 2 Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2909674232 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Home Page</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Hjemmeside</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Home Page - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 172710223 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Type</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Import Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 3034172940 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Inv. Recepient</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Fakt.rekv.ient</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Inv. Recepient - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1954627230 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Invoice Copies</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Antal fakturakopier</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Invoice Copies - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 770692549 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Job No. Sequence</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Sagsnr. Sekvens</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Job No. Sequence L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2089479478 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Job Sub Type Code</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Sagsundertypekode</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Job Sub Type Code L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 602795601 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Job Title</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Stilling</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Job Title - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 797675546 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Job Type Code</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Sagstypekode</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Job Type Code L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1698501403 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>KOB No.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">KOB-nr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field KOB No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2273653569 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Language Code</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Sprogkode</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Language Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2393253273 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Last Date Modified</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Rettet den</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Last Date Modified - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1912304607 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>AdvforbSagsnr</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">AdvforbSagsnr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Legal Conn. Matter No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 3153437447 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Advokatforbindelse</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Advokatforbindelse</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Legal Connection - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2922695289 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Maculation Date</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Maculationsdato</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Maculation Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1064199390 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Middle Name</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Mellemnavn</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Middle Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 352546477 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Mobile Phone No.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Mobilnr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Mobile Phone No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1171753012 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Municipal</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Municipal</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Municipal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 3944725689 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Kommunenr</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Det er ikke så meget at se til</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Municipal No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2961552353 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Navn</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 966287263 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Name 2</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Navn 2</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Name 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1403669541 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>New No.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nyt nr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field New No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 4200184881 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Nej.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1784269895 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>No. Of Errors</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nej. Antal fejl</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field No. Of Errors - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 457186985 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>No. Of Warnings</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nej. Af advarsler</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field No. Of Warnings - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 351181786 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Our Account No.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vores kontonr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Our Account No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 3317057871 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Part 1 Relation Code</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Del 1-relationskode</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Part 1 Relation Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1899916858 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Part 2 Relation Code</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Del 2-relationskode</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Part 2 Relation Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 3559665201 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Party 1</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Part 1</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Party 1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2921968584 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Party 2</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Part 2</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Party 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 966740350 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Payment Terms Code</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Betalingsbeting.kode</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Payment Terms Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 3986423421 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Phone No.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Telefonnr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Phone No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1536621291 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Placement</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Placering</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Placement - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 3660300303 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Post Code</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Postnr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Post Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 895732467 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Primary Industry Group</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Primær branche</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Primary Industry Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2599874634 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Private Phone No.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Privat telefonnr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Private Phone No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 801304080 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Purchaser Code</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Indkøberkode</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Purchaser Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1802236239 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Sagsoverdrager</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Sagsoverdrager</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Refferal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1840439778 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Reminder Terms Code</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Rykkerbetingelseskode</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Reminder Terms Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2247850105 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Responsibility Center</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Ansvarscenter</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Responsibility Center - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1474138314 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Responsible Employee</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ansvarlig medarbejder</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Responsible Employee - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 4009816068 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>AnsvarligJurist</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ansvarlig Ingman</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Responsible Lawyer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 553464652 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Salesperson Code</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Sælgerkode</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Salesperson Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 4253241521 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Salutation Code</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Starthilsenkode</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Salutation Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 4174497221 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>SE-nummer</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">SE-nummer</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field SE-nummer L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 411528779 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Search Name</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Søgenavn</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Search Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 3762452456 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Sekretær</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Fors.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Secretary - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2044221570 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Short Note</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Kort note</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Short Note L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 513339096 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Status</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 513339096 - Property 62802879" translate="yes" xml:space="preserve">
+          <source>OK,Imported,Error,Warning,Created,Updated</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">OK,Importeret,Fejl,Advarsel,Lavet,Opdateret</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Status - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 2418408781 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Sur Name</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Efternavn</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Sur Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 1844012642 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>VAT Bus. Posting Group</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Momsvirksomhedsbogf.gruppe</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field VAT Bus. Posting Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 4002635465 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>VAT Registered</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Moms registreret</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field VAT Registered L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 617267791 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>VAT Registration No.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">SE/CVR-nr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field VAT Registration No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 3194161445 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Vendor Posting Group</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Kreditorbogføringsgruppe</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field Vendor Posting Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1924008015 - Field 868285638 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>VIP Client</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">70% af den</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Contact Staging L365 - Field VIP Client L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3145752028 - Field 3997336476 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Company Name</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Navn på virksomhed</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Navokat2BCsetupStatus - Field Company Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3145752028 - Field 4241106586 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Ended</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Sluttede</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Navokat2BCsetupStatus - Field Ended - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3145752028 - Field 883711285 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Løbenr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Navokat2BCsetupStatus - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3145752028 - Field 4229485142 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Job Id</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Job-id</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Navokat2BCsetupStatus - Field Job Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3145752028 - Field 2311232812 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Job Name</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Jobnavn</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Navokat2BCsetupStatus - Field Job Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3145752028 - Field 758032408 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Duration</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Varighed</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Navokat2BCsetupStatus - Field Lenght - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3145752028 - Field 816905803 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Started</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Startet</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Navokat2BCsetupStatus - Field Started - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 2359180539 - NamedType 2528329960" translate="yes" xml:space="preserve">
+          <source>%1 already exists and you have not allowed updates.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">%1 findes allerede, og du har ikke tilladt opdateringer.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method CreateClientsFromStaging - NamedType Text0100</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 2359180539 - NamedType 1890633343" translate="yes" xml:space="preserve">
+          <source>The Value does not exist in the underlying table.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien findes ikke i den underliggende tabel.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method CreateClientsFromStaging - NamedType Text0101</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 2359180539 - NamedType 3803723194" translate="yes" xml:space="preserve">
+          <source>No. of Lines imported:%1\No. of Lines with errors:%2</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Nej. af importerede linjer:%1\nr. antal linjer med fejl:%2</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method CreateClientsFromStaging - NamedType Text0102</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 2359180539 - NamedType 3166026577" translate="yes" xml:space="preserve">
+          <source>%1 must not be blank.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">%1 må ikke være tomt.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method CreateClientsFromStaging - NamedType Text0103</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 2359180539 - NamedType 784149132" translate="yes" xml:space="preserve">
+          <source>Client Responsible does not exist.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Kundeansvarlig findes ikke.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method CreateClientsFromStaging - NamedType Text0104</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 1141269978 - NamedType 2528329960" translate="yes" xml:space="preserve">
+          <source>%1 already exists and you did not allow updates.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">%1 findes allerede, og du tillader ikke opdateringer.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method CreateContactRelationsFromStaging - NamedType Text0100</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 1141269978 - NamedType 1890633343" translate="yes" xml:space="preserve">
+          <source>The Value does not exist in the underlying table.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien findes ikke i den underliggende tabel.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method CreateContactRelationsFromStaging - NamedType Text0101</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 1201961933 - NamedType 2528329960" translate="yes" xml:space="preserve">
+          <source>%1 already exist and you have not allowed updates.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">%1 findes allerede, og du har ikke tilladte opdateringer.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method CreateMattersFromStaging - NamedType Text0100</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 1201961933 - NamedType 1890633343" translate="yes" xml:space="preserve">
+          <source>The values does not exist in the underlying table</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Værdierne findes ikke i den underliggende tabel</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method CreateMattersFromStaging - NamedType Text0101</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 1201961933 - NamedType 3803723194" translate="yes" xml:space="preserve">
+          <source>The Party does not exist in the underlying table.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Parten findes ikke i den underliggende tabel.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method CreateMattersFromStaging - NamedType Text0102</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 1201961933 - NamedType 3166026577" translate="yes" xml:space="preserve">
+          <source>The Legal Connection does not exist in the underlying table.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Den juridiske forbindelse findes ikke i den underliggende tabel.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method CreateMattersFromStaging - NamedType Text0103</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 1201961933 - NamedType 784149132" translate="yes" xml:space="preserve">
+          <source>The Client does not exist in the underlying table.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Klienten findes ikke i den underliggende tabel.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method CreateMattersFromStaging - NamedType Text0104</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 1201961933 - NamedType 146452515" translate="yes" xml:space="preserve">
+          <source>No. of Lines imported:%1\No. of Lines with errors:%2</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Nej. af importerede linjer:%1\nr. antal linjer med fejl:%2</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method CreateMattersFromStaging - NamedType Text0105</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 1201961933 - NamedType 2059542366" translate="yes" xml:space="preserve">
+          <source>Imported</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Importeret</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method CreateMattersFromStaging - NamedType Text0106</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 2551835365 - NamedType 2528329960" translate="yes" xml:space="preserve">
+          <source>%1 already exists and you did not allow updates.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">%1 findes allerede, og du tillader ikke opdateringer.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method CreatePartiesFromStaging - NamedType Text0100</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 2551835365 - NamedType 1890633343" translate="yes" xml:space="preserve">
+          <source>The Value does not exist in the underlying table.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien findes ikke i den underliggende tabel.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method CreatePartiesFromStaging - NamedType Text0101</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 2999635698 - NamedType 2126343653" translate="yes" xml:space="preserve">
+          <source>%1 already exists and you have not allowed updates.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">%1 findes allerede, og du har ikke tilladt opdateringer.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method ValidateClientFields - NamedType AlreadyExistsErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 2999635698 - NamedType 3233337530" translate="yes" xml:space="preserve">
+          <source>The Value does not exist in the underlying table.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien findes ikke i den underliggende tabel.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method ValidateClientFields - NamedType UnderlyingTableErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 2999635698 - NamedType 2428555214" translate="yes" xml:space="preserve">
+          <source>%1 must not be blank.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">%1 må ikke være tomt.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method ValidateClientFields - NamedType NotBlankErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 2999635698 - NamedType 2545444047" translate="yes" xml:space="preserve">
+          <source>Client Responsible does not exist.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Kundeansvarlig findes ikke.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method ValidateClientFields - NamedType ClientResponsibleNotExistsErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 3992978019 - NamedType 2126343653" translate="yes" xml:space="preserve">
+          <source>%1 already exists and you did not allow updates.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">%1 findes allerede, og du tillader ikke opdateringer.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method ValidateContactRelationFields - NamedType AlreadyExistsErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 3992978019 - NamedType 3233337530" translate="yes" xml:space="preserve">
+          <source>The Value does not exist in the underlying table or staging table.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Værdien findes ikke i den underliggende tabel eller stadieinddelingstabellen.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method ValidateContactRelationFields - NamedType UnderlyingTableErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 672440160 - NamedType 3233337530" translate="yes" xml:space="preserve">
+          <source>The values does not exist in the underlying table</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Værdierne findes ikke i den underliggende tabel</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method ValidateMatterFields - NamedType UnderlyingTableErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 672440160 - NamedType 1299556163" translate="yes" xml:space="preserve">
+          <source>Client does not exists in (also not in staging)</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Klienten findes ikke i (også i stadieinddeling)</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method ValidateMatterFields - NamedType ClientNotExistsErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 672440160 - NamedType 1627078565" translate="yes" xml:space="preserve">
+          <source>Employee will be autocreated</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Medarbejderen oprettes automatisk</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method ValidateMatterFields - NamedType EmployeeAutoCreateWarn</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 672440160 - NamedType 2214914278" translate="yes" xml:space="preserve">
+          <source>Field value is mandatory</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Feltværdi er obligatorisk</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method ValidateMatterFields - NamedType MandatoryErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 2524245691 - NamedType 2528329960" translate="yes" xml:space="preserve">
+          <source>%1 already exists and you did not allow updates.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">%1 findes allerede, og du tillader ikke opdateringer.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method ValidatePartyFields - NamedType Text0100</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1422784180 - Method 2524245691 - NamedType 3233337530" translate="yes" xml:space="preserve">
+          <source>The Value does not exist in the underlying table.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien findes ikke i den underliggende tabel.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ExcelImportToolMgtL365 - Method ValidatePartyFields - NamedType UnderlyingTableErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4249315683 - NamedType 2499179930" translate="yes" xml:space="preserve">
+          <source>KlientImport_v1.1.xlsx</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">KlientImport_v1.1.xlsx</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Clients2 L365 - NamedType ExcelFileName</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4249315683 - NamedType 2377663777" translate="yes" xml:space="preserve">
+          <source>Ark1</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Ark1</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Clients2 L365 - NamedType ExcelSheetName</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4249315683 - NamedType 3803723194" translate="yes" xml:space="preserve">
+          <source>No. of Lines imported:%1\No. of Lines with errors:%2</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Nej. af importerede linjer:%1\nr. antal linjer med fejl:%2</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Clients2 L365 - NamedType Text0102</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4249315683 - NamedType 3166026577" translate="yes" xml:space="preserve">
+          <source>%1 must not be blank.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">%1 må ikke være tomt.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Clients2 L365 - NamedType Text0103</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4249315683 - Method 1831379292 - NamedType 3114637384" translate="yes" xml:space="preserve">
+          <source>Værdien er for lang (%1). Kun %2 tegn er tilladt</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien er for lang (%1). Kun %2 tegn er tilladt</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Clients2 L365 - Method ValidateFieldLength - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4249315683 - Method 1899798540 - NamedType 3114637384" translate="yes" xml:space="preserve">
+          <source>Værdien "%1" er ikke  ja eller nej.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien "%1" er ikke ja eller nej.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Clients2 L365 - Method ValidateIsBoolean - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4249315683 - Method 2378921940 - NamedType 3114637384" translate="yes" xml:space="preserve">
+          <source>Værdien "%1" er ikke en dato.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien "%1" er ikke en dato.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Clients2 L365 - Method ValidateIsDate - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4249315683 - Method 1272594257 - NamedType 3114637384" translate="yes" xml:space="preserve">
+          <source>Værdien "%1" er ikke et tal.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien "%1" er ikke et tal.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Clients2 L365 - Method ValidateisDecimal - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4249315683 - Method 1093657134 - NamedType 3114637384" translate="yes" xml:space="preserve">
+          <source>Værdien "%1" er ikke et tal.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien "%1" er ikke et tal.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Clients2 L365 - Method ValidateIsInteger - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3677995362 - NamedType 2499179930" translate="yes" xml:space="preserve">
+          <source>PartsImport_v1.1.xlsx</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">PartsImport_v1.1.xlsx</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Contact Relations2 L365 - NamedType ExcelFileName</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3677995362 - NamedType 2377663777" translate="yes" xml:space="preserve">
+          <source>Ark1</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Ark1</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Contact Relations2 L365 - NamedType ExcelSheetName</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3677995362 - NamedType 3803723194" translate="yes" xml:space="preserve">
+          <source>No. of Lines imported:%1\No. of Lines with errors:%2</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Nej. af importerede linjer:%1\nr. antal linjer med fejl:%2</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Contact Relations2 L365 - NamedType Text0102</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3677995362 - Method 1831379292 - NamedType 3114637384" translate="yes" xml:space="preserve">
+          <source>Værdien er for lang (%1). Kun %2 tegn er tilladt</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien er for lang (%1). Kun %2 tegn er tilladt</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Contact Relations2 L365 - Method ValidateFieldLength - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3677995362 - Method 2378921940 - NamedType 3114637384" translate="yes" xml:space="preserve">
+          <source>Værdien "%1" er ikke en dato.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien "%1" er ikke en dato.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Contact Relations2 L365 - Method ValidateIsDate - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3677995362 - Method 1272594257 - NamedType 3114637384" translate="yes" xml:space="preserve">
+          <source>Værdien "%1" er ikke et tal.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien "%1" er ikke et tal.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Contact Relations2 L365 - Method ValidateisDecimal - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3677995362 - Method 1093657134 - NamedType 3114637384" translate="yes" xml:space="preserve">
+          <source>Værdien "%1" er ikke et tal.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien "%1" er ikke et tal.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Contact Relations2 L365 - Method ValidateIsInteger - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4037128085 - NamedType 2499179930" translate="yes" xml:space="preserve">
+          <source>SagsImport_v1.6.xlsx</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">SagsImport_v1.6.xlsx</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Matters2 L365 - NamedType ExcelFileName</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4037128085 - NamedType 2377663777" translate="yes" xml:space="preserve">
+          <source>Ark1</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Ark1</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Matters2 L365 - NamedType ExcelSheetName</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4037128085 - NamedType 2528329960" translate="yes" xml:space="preserve">
+          <source>%1 already exist and you have not allowed updates.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">%1 findes allerede, og du har ikke tilladte opdateringer.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Matters2 L365 - NamedType Text0100</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4037128085 - NamedType 146452515" translate="yes" xml:space="preserve">
+          <source>No. of Lines imported:%1\No. of Lines with errors:%2</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Nej. af importerede linjer:%1\nr. antal linjer med fejl:%2</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Matters2 L365 - NamedType Text0105</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4037128085 - NamedType 2059542366" translate="yes" xml:space="preserve">
+          <source>Imported</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Importeret</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Matters2 L365 - NamedType Text0106</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4037128085 - NamedType 470250014" translate="yes" xml:space="preserve">
+          <source>Import fits Excel-sheet version 1.4</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Importér udl. Excel-arkversion 1.4</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Matters2 L365 - NamedType VersionTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4037128085 - Method 1831379292 - NamedType 3114637384" translate="yes" xml:space="preserve">
+          <source>Værdien er for lang (%1). Kun %2 tegn er tilladt</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien er for lang (%1). Kun %2 tegn er tilladt</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Matters2 L365 - Method ValidateFieldLength - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4037128085 - Method 1899798540 - NamedType 3114637384" translate="yes" xml:space="preserve">
+          <source>Værdien "%1" er ikke  ja eller nej.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien "%1" er ikke ja eller nej.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Matters2 L365 - Method ValidateIsBoolean - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4037128085 - Method 2378921940 - NamedType 3114637384" translate="yes" xml:space="preserve">
+          <source>Værdien "%1" er ikke en dato.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien "%1" er ikke en dato.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Matters2 L365 - Method ValidateIsDate - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4037128085 - Method 1272594257 - NamedType 3114637384" translate="yes" xml:space="preserve">
+          <source>Værdien "%1" er ikke et tal.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien "%1" er ikke et tal.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Matters2 L365 - Method ValidateisDecimal - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4037128085 - Method 1093657134 - NamedType 3114637384" translate="yes" xml:space="preserve">
+          <source>Værdien "%1" er ikke et tal.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien "%1" er ikke et tal.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Matters2 L365 - Method ValidateIsInteger - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 118839533 - NamedType 2499179930" translate="yes" xml:space="preserve">
+          <source>PartsImport_v1.1.xlsx</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">PartsImport_v1.1.xlsx</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Parties2 L365 - NamedType ExcelFileName</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 118839533 - NamedType 2377663777" translate="yes" xml:space="preserve">
+          <source>Ark1</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Ark1</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Parties2 L365 - NamedType ExcelSheetName</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 118839533 - NamedType 3803723194" translate="yes" xml:space="preserve">
+          <source>No. of Lines imported:%1\No. of Lines with errors:%2</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Nej. af importerede linjer:%1\nr. antal linjer med fejl:%2</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Parties2 L365 - NamedType Text0102</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 118839533 - Method 1831379292 - NamedType 3114637384" translate="yes" xml:space="preserve">
+          <source>Værdien er for lang (%1). Kun %2 tegn er tilladt</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien er for lang (%1). Kun %2 tegn er tilladt</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Parties2 L365 - Method ValidateFieldLength - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 118839533 - Method 2378921940 - NamedType 3114637384" translate="yes" xml:space="preserve">
+          <source>Værdien "%1" er ikke en dato.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien "%1" er ikke en dato.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Parties2 L365 - Method ValidateIsDate - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 118839533 - Method 1272594257 - NamedType 3114637384" translate="yes" xml:space="preserve">
+          <source>Værdien "%1" er ikke et tal.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien "%1" er ikke et tal.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Parties2 L365 - Method ValidateisDecimal - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 118839533 - Method 1093657134 - NamedType 3114637384" translate="yes" xml:space="preserve">
+          <source>Værdien "%1" er ikke et tal.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien "%1" er ikke et tal.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Parties2 L365 - Method ValidateIsInteger - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 954504040 - NamedType 2499179930" translate="yes" xml:space="preserve">
+          <source>Tidspostimport_v2.0.xlsx</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tidspostimport_v2.0.xlsx</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Time L365 - NamedType ExcelFileName</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 954504040 - NamedType 2377663777" translate="yes" xml:space="preserve">
+          <source>Data</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Data</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Time L365 - NamedType ExcelSheetName</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 954504040 - NamedType 3803723194" translate="yes" xml:space="preserve">
+          <source>No. of Lines imported:%1\No. of Lines with errors:%2</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Nej. af importerede linjer:%1\nr. antal linjer med fejl:%2</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Time L365 - NamedType Text0102</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 954504040 - NamedType 2690540610" translate="yes" xml:space="preserve">
+          <source>The Value does not exist in the underlying table.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien findes ikke i den underliggende tabel.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Time L365 - NamedType UnknownValErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 954504040 - Method 2378921940 - NamedType 3114637384" translate="yes" xml:space="preserve">
+          <source>Værdien "%1" er ikke en dato.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien "%1" er ikke en dato.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Time L365 - Method ValidateIsDate - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 954504040 - Method 1272594257 - NamedType 3114637384" translate="yes" xml:space="preserve">
+          <source>Værdien "%1" er ikke et tal.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Værdien "%1" er ikke et tal.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Import Time L365 - Method ValidateisDecimal - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2544210197 - NamedType 3366217384" translate="yes" xml:space="preserve">
+          <source>The environment is now disconnected from production SharePoint and labelled as "TEST"</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Miljøet er nu ud af produktion SharePoint og kontr. som "TEST"</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SetupTestEnvironmentL365CP - NamedType CompletedMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2544210197 - NamedType 2294662597" translate="yes" xml:space="preserve">
+          <source>Preparing test environment. This will delete references to production SharePoint. New links to a test SharePoint can created later. Continue?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Forbereder testmiljø. Dette sletter referencer til produktion SharePoint. Nye links til en test SharePoint kan oprettes senere. Fortsætte?</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SetupTestEnvironmentL365CP - NamedType ConfirmMsg</note>
+        </trans-unit>
+        <trans-unit id="Page 962539106 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Import Contact Relation Staging</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Importér stadieinddeling af kontaktrelation</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Rel. Stag. Wsheet L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 962539106 - Control 1351826026 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Attention field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Attention.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Rel. Stag. Wsheet L365 - Control Attention - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 962539106 - Control 1717599105 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Email field.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Angiver værdien i feltet Mail.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Rel. Stag. Wsheet L365 - Control Attention E-Mail - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 962539106 - Control 4268111634 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Global Dimension 1 Code field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for feltet Global dimension 1-kode.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Rel. Stag. Wsheet L365 - Control Attention Invoice E-Mail - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 962539106 - Control 2623452871 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Attention Phone No. field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af attention-telefonnr. Feltet.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Rel. Stag. Wsheet L365 - Control Attention Phone No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 962539106 - Control 2732579989 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the City field.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Angiver værdien i feltet By.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Rel. Stag. Wsheet L365 - Control Block Interaction - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 962539106 - Control 2333262746 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Contact 1No. field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Kontakt 1No.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Rel. Stag. Wsheet L365 - Control Contact 1 No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 962539106 - Control 3275823327 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Contact 2 No. field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for Kontakt 2-nummeret. Feltet.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Rel. Stag. Wsheet L365 - Control Contact 2 No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 962539106 - Control 505709262 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Global Dimension 2 Code field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for feltet Global dimension 2-kode.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Rel. Stag. Wsheet L365 - Control GLN No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 962539106 - Control 2591971502 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the New Contact 1No. field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Ny kontakt 1Nr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Rel. Stag. Wsheet L365 - Control New Contact 1 No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 962539106 - Control 207311475 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the New Contact 2 No. field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for det nye kontakt 2-nr. Feltet.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Rel. Stag. Wsheet L365 - Control New Contact 2 No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 962539106 - Control 2832596429 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Relation Code field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for feltet Relationskode.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Rel. Stag. Wsheet L365 - Control Relation Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 962539106 - Control 513339096 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Status field.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Angiver værdien af feltet Status.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Rel. Stag. Wsheet L365 - Control Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 962539106 - Control 3001618318 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Your Reference field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Reference.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Rel. Stag. Wsheet L365 - Control Your Reference - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 962539106 - Action 858950785 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Show Log</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Vis log</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Rel. Stag. Wsheet L365 - Action ShowLog - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 962539106 - Action 3885194107 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Create Contact Relations</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Opret kontaktrelationer</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Rel. Stag. Wsheet L365 - Action CreateRelations - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 962539106 - Action 60735148 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Import Contact Relations</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Importér kontaktrelationer</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Rel. Stag. Wsheet L365 - Action ImportRelations - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 962539106 - Action 957677901 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Validate Contact Relations</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Valider kontaktrelationer</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Rel. Stag. Wsheet L365 - Action ValidateRelations - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Import Contact Staging List</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Importér stadieinddelingsoversigt for kontakt</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 3168444338 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Address field.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Angiver værdien i feltet Adresse.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Address - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2306852000 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Address 2 field.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Angiver værdien i feltet Adresse 2.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Address 2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2906065366 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Archive Date field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Arkivdato.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Archive Date L365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 4212203096 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Archive Index field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for feltet Arkivindeks.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Archive Index - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 57370450 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Archived field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Arkiveret.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Archived - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2935873462 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Attention field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Attention.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control AttentionL365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2891120704 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Bank Account No. field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af bankkontonr. Feltet.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Bank Account No. L365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2438806315 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Bank Branch No. field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for bankregistreringsnr. Feltet.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Bank Branch No. L365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 16352507 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Billing Employee field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Faktureringsmedarbejder.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Billing Employee - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1683466127 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Birth Date field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Fødselsdato.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Birth Date L365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 3543129988 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Blocked field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for feltet Spærret.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Blocked - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 3907584462 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Sagsbehandler field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Sagsbehandler.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Case Worker - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2327306268 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Sagsbehandler2 field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Sagsbehandler2.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Case worker 2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 714791889 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the City field.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Angiver værdien i feltet By.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control City - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 645521439 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Civil Court No. field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af borgerrettighedsnummeret. Feltet.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Civil Court No. L365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 3957217117 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Civil Registration No. field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for registreringsnummeret. Feltet.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Civil Registration No. L365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2915434885 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Client Documentation field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Klientdokumentation.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Client Documentation - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1374952498 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Client Reference field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Klientreference.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Client Reference L365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2790486453 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Comment field.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Angiver værdien i feltet Bemærkning.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Comment - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 3133801257 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Company field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Virksomhed.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Company - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1551200516 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Company No. field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af virksomhedsnummeret. Feltet.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Company No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 3993128796 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Contact field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Kontakt.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Contact - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2440771828 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Species if Contact already exists</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Hvis kontakten allerede findes</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Contact Exists - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 284764054 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Country/Region Code field.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Angiver værdien af feltet Lande-/områdekode.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Country/Region Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 4249183955 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Retskreds låst field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Retskreds låst.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Court Locked L365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 4056374076 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Retskredsnr field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for feltet Retskredsnr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Court No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 3935345555 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Creation Date field.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Angiver værdien i feltet Oprettelsesdato.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Creation Date L365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 4198939294 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Currency Code field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for feltet Valutakode.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Currency Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 410940989 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Customer Posting Group field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Debitorbogføringsgruppe.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Customer Posting Group - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 826021719 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Customer Template Code field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Debitorskabelonkode.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Customer Template Code L365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1541011875 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Email field.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Angiver værdien i feltet Mail.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control E-Mail - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 721167439 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the EAN No. field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for EAN-nummeret. Feltet.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control EAN No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 458406397 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Ending Date field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Slutdato.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Ending Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 3451045116 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Extended Name field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for feltet Udvidet navn.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Extended Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1807381932 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Fax No. field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af faxnummeret. Feltet.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Fax No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2725554719 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Fin. Charge Terms Code field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Rentebetingelseskode.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Fin. Charge Terms Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 3444679095 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the First Name field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Fornavn.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control First Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1209362222 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Former No. field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for det forrige nr. Feltet.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Former No. L365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 633819257 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Gen. Bus. Posting Group field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Virksomhedsbogføringsgruppe.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Gen. Bus. Posting Group - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1303377601 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Global Dimension 1 Code field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for feltet Global dimension 1-kode.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Global Dimension 1 Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1337243520 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Global Dimension 2 Code field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for feltet Global dimension 2-kode.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Global Dimension 2 Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2909674232 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Home Page field.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Angiver værdien af feltet Hjemmeside.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Home Page - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 3034172940 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Inv. Recepient field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for feltet Fakt.rekvient.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Inv. Recepient - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1954627230 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Invoice Copies field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Fakturakopier.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Invoice Copies - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 770692549 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Job No. Sequence field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af sagsnr. Rækkefølgens felt.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Job No. Sequence L365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2089479478 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Job Sub Type Code field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Sagsundertypekode.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Job Sub Type Code L365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 602795601 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Job Title field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Stilling.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Job Title - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 797675546 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Job Type Code field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Sagstypekode.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Job Type Code L365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1698501403 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the KOB No. field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for KOB-nummeret. Feltet.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control KOB No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2273653569 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Language Code field.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Angiver værdien i feltet Sprogkode.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Language Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2393253273 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Last Date Modified field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Rettet den.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Last Date Modified - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1912304607 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the AdvforbSagsnr field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet AdvforbSagsnr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Legal Conn. Matter No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 3153437447 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Advokatforbindelse field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Advokatforbindelse.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Legal Connection - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2922695289 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Maculation Date field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Maculationsdato.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Maculation Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1064199390 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Middle Name field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Mellemnavn.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Middle Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 352546477 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Mobile Phone No. field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af mobilnr. Feltet.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Mobile Phone No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1171753012 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Municipal field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Forelinjen.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Municipal - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 3944725689 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Kommunenr field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for feltet Salgspris.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Municipal No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2961552353 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Name field.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Angiver værdien af feltet Navn.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 966287263 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Name 2 field.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Angiver værdien for feltet Navn 2.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Name 2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1403669541 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Species the No. to be used for Contact. This value overrides the original No. from import</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Af og til har du nr. skal bruges til kontakt. Denne værdi tilsidesætter det oprindelige nr. fra import</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control New No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 4200184881 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the No. field.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Angiver værdien for feltet Nr. Feltet.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 351181786 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Our Account No. field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af vores kontonr. Feltet.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Our Account No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 3317057871 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Part 1 Relation Code field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Del 1-relationskode.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Part 1 Relation Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1899916858 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Part 2 Relation Code field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Del 2-relationskode.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Part 2 Relation Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 3559665201 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Party 1 field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for feltet Part 1.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Party 1 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2921968584 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Party 2 field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Part 2.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Party 2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 966740350 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Payment Terms Code field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Betalingsbetingelseskode.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Payment Terms Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 3986423421 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Phone No. field.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Angiver værdien af telefonnr. Feltet.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Phone No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1536621291 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Placement field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Placering.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Placement - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 3660300303 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Post Code field.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Angiver værdien i feltet Postnr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Post Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 895732467 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Primary Industry Group field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Primær branche.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Primary Industry Group - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2599874634 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Private Phone No. field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for det private telefonnr. Feltet.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Private Phone No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1802236239 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Sagsoverdrager field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Sagsoverdrager.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Refferal - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1840439778 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Reminder Terms Code field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Rykkerbetingelseskode.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Reminder Terms Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2247850105 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Responsibility Center field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Ansvarscenter.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Responsibility Center - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1474138314 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Responsible Employee field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for feltet Ansvarlig medarbejder.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Responsible Employee - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 4009816068 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the AnsvarligJurist field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet AnsvarligList.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Responsible Lawyer - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 553464652 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Salesperson Code field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for feltet Sælgerkode.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Salesperson Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 4253241521 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Salutation Code field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Starthilsenkode.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Salutation Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 4174497221 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the SE-nummer field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for feltet SE-nummer.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control SE-nummer L365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 411528779 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Search Name field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Søgenavn.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Search Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 3762452456 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Sekretær field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for feltet  Vare.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Secretary - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2044221570 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Short Note field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for feltet Kort note.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Short Note L365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 513339096 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Status field.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Angiver værdien af feltet Status.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2418408781 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Sur Name field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Efternavn.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Sur Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1878130204 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Type field.</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Angiver værdien for feltet Type.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 1844012642 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the VAT Bus. Posting Group field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien i feltet Momsvirksomhedsbogf.gruppe.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control VAT Bus. Posting Group - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 4002635465 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the VAT Registered field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af feltet Registreret moms.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control VAT Registered L365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 617267791 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the VAT Registration No. field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien af SE/CVR-nummeret. Feltet.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control VAT Registration No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 868285638 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the VIP Client field.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Angiver værdien for feltet TOMMER-klient.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control VIP Client L365 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Control 2750307528 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Statistics</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Statistik</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Control ImportLogFactBox - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 3430871846 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Import Setup</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Importér opsætning</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action ImportSetup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 858950785 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Show Log</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Vis log</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action ShowLog - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 710972128 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Create</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Oprette</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action Create - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 249732250 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Create Clients</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Opret klienter</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action CreateClients - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 1089403968 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Create Matters</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Opret afs.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action CreateMattesr - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 3427048240 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Create Parties</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Opret parter</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action CreateParties - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 3201496503 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Import</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Importere</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action Import - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 417325193 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Import Clients</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Importér klienter</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action ImportClients - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 714945079 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Import Matters</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Importér Afs.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action ImportMatters - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 2669725215 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Import Parties</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Importér parter</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action ImportParties - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 3112212850 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Show only Clients</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vis kun klienter</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action OnlyClients - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 3112212850 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Clients</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Klienter</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action OnlyClients - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 3428088496 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Show only Matters</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vis kun aftr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action OnlyMatters - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 3428088496 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Matters</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Spørgsmål</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action OnlyMatters - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 3547710792 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Show only Parties</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vis kun parter</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action OnlyParties - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 3547710792 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Parties</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Parter</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action OnlyParties - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 3292354599 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Show only lines with errors</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vis kun linjer med fejl</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action OnlyWithErrors - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 3292354599 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Errors</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Fejl</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action OnlyWithErrors - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 3769389961 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Show only lines with warnings</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vis kun linjer med advarsler</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action OnlyWithWarnings - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 3769389961 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Warnings</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Advarsler</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action OnlyWithWarnings - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 580853590 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Show only lines with or without errors or warnings</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vis kun linjer med eller uden fejl eller advarsler</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action ShowAll - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 580853590 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>All Lines</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Alle linjer</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action ShowAll - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 4137353997 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Validation</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Validering</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action Validation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 1519087249 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Validate Fields</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Valider felter</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action ValidateFields - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 968294743 - Action 59894472 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Validate No. Series</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Valider nr. Serie</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action ValidateNoSeries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 251302152 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Import Log Factbox</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Indlæs log-faktaboks</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Log Factbox - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4236256346 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Navokat to Abakion Legal Setup</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Navarrayt til juridisk opsætning af Aarray</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navokat2LegalSetupTool - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4236256346 - Action 858950785 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Show Status Log</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vis statuslog</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navokat2LegalSetupTool - Action ShowLog - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4236256346 - Action 551751870 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Delete all time entries and resets Job Ledger Entries to allow re-generatoin of Time entries</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Slet alle tidsposter, og nulstil sagsposter, så der kan genereres tidsposter igen</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navokat2LegalSetupTool - Action CleanUpDoubleTimeEntries - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4236256346 - Action 551751870 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Delete all TimeEntries</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Slet alle timeposter</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navokat2LegalSetupTool - Action CleanUpDoubleTimeEntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4236256346 - Action 3232323830 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Do everything for all companies</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Gør alt for alle virksomheder</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Navokat2LegalSetupTool - Action DoEverything - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 741109740 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Sales Header</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Salgshoved</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SalesHeaderSupportTool - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2159707091 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Import SharePoint Websites from CSV file</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Importér SharePoint Tilslut fra CSV-fil</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Report DeleteEmpContactBusRel L365CP - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1552667709 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Import SharePoint Websites from CSV file</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Importér SharePoint Tilslut fra CSV-fil</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Report ImportSharePointWebsitesL365CP - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1552667709 - NamedType 1705035009" translate="yes" xml:space="preserve">
+          <source>Please choose the Client Id CSV file.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vælg klient-id'et CSV-filen.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Report ImportSharePointWebsitesL365CP - NamedType FileSelectionMsg</note>
+        </trans-unit>
+        <trans-unit id="Report 1552667709 - Control 2346885236 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Muligheder</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Report ImportSharePointWebsitesL365CP - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 2180994875 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>FIK Parties update L365</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">FIK-parts opdatering L365</target>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort FIK Parties update L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1808964249 - Action 1866170 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Import Document Templates</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Importér dokumentskabeloner</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Abakion Legal Import Log L365 - Action ImportDocTemplates - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1808964249 - Action 769556560 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Import Time Entries</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Importér tidsposter</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Abakion Legal Import Log L365 - Action ImportTimeL365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3795591428 - Action 1247531714 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Clear App Guid</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ryd app-Guid</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AbakionLegalSetupExtL365 - Action ClearGUID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1996954248 - Action 2563031662 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Client/Reminderlist</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Klient/rykkerliste</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Client List CP L365 - Action ClientReminderListCPL365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 513463579 - Action 1409086764 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source></source>
+          <target state="new"></target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension FIK Parties Update L365 - Action ClearDocumentNoFromSelected - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 513463579 - Action 1409086764 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Clear Document No. On Selected Payment Id's</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ryd bilagsnr. På udvalgte betalings-id'er</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension FIK Parties Update L365 - Action ClearDocumentNoFromSelected - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 513463579 - Action 3008681179 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Imports a csv file exported from Lexsos Advo+ NAV and updates JobNo and PartyNo. in PaymentID table of the imported FIK Nos. See Zendesk #3080917 for details</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Importerer en csv-fil, der er eksporteret fra Lexsos Advo+ NAV, og opdaterer JobNo og PartyNo. i tabellen PaymentID for de importerede FIK-nr. Se Alle 3080917 for at få yderligere oplysninger</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension FIK Parties Update L365 - Action ImportPartiesFIK - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 513463579 - Action 3008681179 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Import Parties FIK file</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Importér fik-fil for parter</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension FIK Parties Update L365 - Action ImportPartiesFIK - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2956282151 - Action 1839499681 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Add DK as default to Post Codes with missing country code</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tilføj DK som standard til postnumre med manglende lande-/områdekode</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PostCodeSetupToolsL365 - Action AddDKAsDefault - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2956282151 - Action 1839499681 - Method 1377591017 - NamedType 2339215735" translate="yes" xml:space="preserve">
+          <source>This should only be used by consultants. Do you wish to proceed?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Dette må kun bruges af konsulenter. Vil du fortsætte?</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PostCodeSetupToolsL365 - Action AddDKAsDefault - Method OnAction - NamedType ConsultantOnlyQst</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2956282151 - Action 1839499681 - Method 1377591017 - NamedType 563229157" translate="yes" xml:space="preserve">
+          <source>Finished updating %1 post codes wiith missing country codes</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Færdig opdatering af %1 postnumre med manglende landekoder</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PostCodeSetupToolsL365 - Action AddDKAsDefault - Method OnAction - NamedType FinishedMsg</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2905657371 - Action 2544210197 - Property 1295455071" translate="yes" xml:space="preserve">
+          <source>Prepares a newly created sandbox copy of a production environment for testing, by removing conenctions to production SharePoint and other external links. SharePoint sites in BC are deleted, but can be recreated with links to a testing SharePoint site from the SharePoint Sites page</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Forbereder en nyoprettet sandkassekopi af et produktionsmiljø til test ved at fjerne sammenkædninger til produktions-SharePoint og andre eksterne links. SharePoint-steder i BC slettes, men kan oprettes igen med links til et test af SharePoint-webstedet fra siden SharePoint-steder</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SharePointSetupL365CP - Action SetupTestEnvironmentL365CP - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2905657371 - Action 2544210197 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Setup Test Environment</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Konfigurer testmiljø</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SharePointSetupL365CP - Action SetupTestEnvironmentL365CP - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 127835018 - Action 365968298 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Create Default Folders for Contacts</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Opret standardmapper for kontakter</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SharePointSitesL365CP - Action CreateContactFoldersL365CP - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 127835018 - Action 385594006 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Import Websites</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Importér Fortr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SharePointSitesL365CP - Action ImportWebsitesL365CP - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 79464783 - NamedType 1867863228" translate="yes" xml:space="preserve">
+          <source>Default folders ar now added.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Standardmapperne er nu tilføjet.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Temp Cont. Entry List L365CP - NamedType AddFoldersCompletedMsg</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 79464783 - Action 2194755940 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Add Default Folders</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tilføj standardmapper</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Temp Cont. Entry List L365CP - Action AddDefaultFoldersL365CP - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4132487568 - Action 4215883397 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Delete w/o check</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Slet uden check</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension VAT Posting Setup - Action DeleteWithoutCheck - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4132487568 - Action 4215883397 - Method 1377591017 - NamedType 4173440917" translate="yes" xml:space="preserve">
+          <source>This should only be used by consultants. Do you wish to proceed?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Dette må kun bruges af konsulenter. Vil du fortsætte?</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension VAT Posting Setup - Action DeleteWithoutCheck - Method OnAction - NamedType ConsultantOnly</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3064228669 - Field 1512762349 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>MasterCompany</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">MasterCompany</target>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CompanyInfoUPG - Field MasterCompany - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 905928808 - Field 1077521233 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Date Type Validation</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Validering af datotype</target>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension ImportLogL365Ext - Field Date Type Validation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 905928808 - Field 149522872 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Entry Type</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Posttype</target>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension ImportLogL365Ext - Field Entry Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 905928808 - Field 149522872 - Property 62802879" translate="yes" xml:space="preserve">
+          <source>Warning,Error</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Advarsel,Fejl</target>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension ImportLogL365Ext - Field Entry Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2811307997 - Field 2217003555 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Auto Create Employee</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Opret medarbejder automatisk</target>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension ImportSetupExt - Field Auto Create Employee - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3790245859 - Field 3124326621 - Property 2879900210" translate="yes" xml:space="preserve">
+          <source>Import File</source>
+          <target state="needs-review-translation" state-qualifier="x-mt-cache">Indlæs fil</target>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PackTemplate - Field Import File - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
