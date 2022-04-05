@@ -162,6 +162,7 @@ codeunit 71113 "ExcelImportToolMgtL365"
                     if not Update then begin //INSERT
                         Matter2.SETRANGE("Contact Type L365", AbakionLegalSetup."Job Contact Type");
                         Matter2.INSERT(true);
+                        Matter2.SETRANGE("Contact Type L365");
                         Client.GET(Matter."Company No.");
                         if NavokatBasic.GetCustomerNo(Client."No.") = '' then begin
                             Client.TESTFIELD("Customer Template Code L365");
