@@ -309,10 +309,6 @@ page 71101 "SalesHeaderSupportTool"
                 {
                     ApplicationArea = All;
                 }
-                field(Id; Rec.Id)
-                {
-                    ApplicationArea = All;
-                }
                 field("Incoming Document Entry No."; Rec."Incoming Document Entry No.")
                 {
                     ApplicationArea = All;
@@ -464,10 +460,6 @@ page 71101 "SalesHeaderSupportTool"
                     ApplicationArea = All;
                 }
                 field("Payment Discount %"; Rec."Payment Discount %")
-                {
-                    ApplicationArea = All;
-                }
-                field("Payment Instructions Id"; Rec."Payment Instructions Id")
                 {
                     ApplicationArea = All;
                 }
