@@ -1653,10 +1653,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Navokat2LegalSetupTool - Action DoEverything - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1799217437 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Cr.Memo Header</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SalesCrMemoHeaderSupportTool - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 741109740 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sales Header</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page SalesHeaderSupportTool - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1812465187 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Invoice Header</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page SalesInvoiceHeaderSupportTool - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 2159707091 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Import SharePoint Websites from CSV file</source>
