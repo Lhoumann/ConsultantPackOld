@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PermissionSets>
-  <PermissionSet RoleID="CONSULTANT PACK ABAKION LEGAL" RoleName="Consultant Pack Abakion Legal">
+  <PermissionSet RoleID="CONSULTANT PACK" RoleName="Consultant Pack Abakion Legal">
     <Permission>
       <ObjectID>71100</ObjectID>
       <ObjectType>0</ObjectType>

@@ -943,6 +943,61 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit SetupTestEnvironmentL365CP - NamedType ConfirmMsg</note>
         </trans-unit>
+        <trans-unit id="Page 2926099763 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Consultant Pack CP L365</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Consultant Pack CP L365 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2926099763 - Control 28948556 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Abakion Legal Guides URL field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Consultant Pack CP L365 - Control Abakion Legal Guides URL - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2926099763 - Control 2277073588 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Teamviewer Download URL field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Consultant Pack CP L365 - Control Teamviewer Download URL - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2926099763 - Action 1449989074 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Correction Pages</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Consultant Pack CP L365 - Action CorrectionPages - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2926099763 - Action 4128802699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Correct Time Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Consultant Pack CP L365 - Action CorrectTimeEntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2926099763 - Action 587499452 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Upgrade</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Consultant Pack CP L365 - Action Upgrade - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2926099763 - Action 4136014630 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>1010 - Move Allocation Lines to new tables</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Consultant Pack CP L365 - Action A3111010 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2926099763 - Action 2188977652 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>1056 - Line Type added</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Consultant Pack CP L365 - Action A3111056 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2926099763 - Action 1923185563 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>1233 - To-do replacement</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Consultant Pack CP L365 - Action A3111233 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2926099763 - Action 1405857665 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>1260 - Update Employee Dim On Allocations</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Consultant Pack CP L365 - Action A3111260 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2926099763 - Action 3219844893 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>584 - Update Split percentages</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Consultant Pack CP L365 - Action VP0059584 - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 962539106 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Import Contact Relation Staging</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1622,6 +1677,11 @@
           <source>Validate No. Series</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Cont. Stag. WorksheetL365 - Action ValidateNoSeries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 165990130 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Correct Time Entries CP L365</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Correct Time Entries CP L365 - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 251302152 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Import Log Factbox</source>

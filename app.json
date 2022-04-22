@@ -2,7 +2,7 @@
   "id": "b01d221b-47b0-4571-93bf-fd2af4aa22f2",
   "name": "Consultant Pack Abakion Legal",
   "publisher": "Abakion",
-  "version": "19.0.202215.1",
+  "version": "20.0.202216.0",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -15,13 +15,13 @@
       "id": "d36e367f-3d56-4c7d-aad0-c06498e6c069",
       "name": "Abakion Legal",
       "publisher": "Abakion",
-      "version": "18.0.0.0"
+      "version": "20.0.0.0"
     }
   ],
   "screenshots": [],
   "target": "Cloud",
   "platform": "1.0.0.0",
-  "application": "18.0.0.0",
+  "application": "20.0.0.0",
   "idRanges": [
     {
       "from": 71100,
