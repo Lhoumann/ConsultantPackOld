@@ -1,5 +1,7 @@
 codeunit 71115 "UpgradeCodeunits"
 {
+    Permissions = tabledata "Sales Invoice Line" = rimd,
+                  tabledata "Sales Cr.Memo Line" = rimd;
     procedure PerformUpgradeA3111010()
     var
         InvSuggSummaryLineL365: Record "Inv. Sugg. Summary Line L365";
