@@ -110,6 +110,22 @@ page 71107 "Consultant Pack CP L365"
                         Message('Done!');
                     end;
                 }
+                action(SummaryUpdate)
+                {
+                    Caption = 'Update Summary Code';
+                    ApplicationArea = All;
+                    Image = BulletList;
+
+                    trigger OnAction()
+                    var
+                        Upgrade: Codeunit UpgradeCodeunits;
+
+                    begin
+                        Upgrade.PerformUpgradeSummaryCode();
+                        Message('Done!');
+                    end;
+                }
+
             }
             group(CorrectionPages)
             {

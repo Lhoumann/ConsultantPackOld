@@ -76,8 +76,12 @@ codeunit 71115 "UpgradeCodeunits"
         SalesInvoiceLine.SetFilter("Disburs. Applies-to ID L365", '<>%1', '');
         SalesInvoiceLine.ModifyAll("Line Type L365", SalesInvoiceLine."Line Type L365"::Disbursement);
         SalesInvoiceLine.reset;
+        SalesInvoiceLine.setrange(Type, SalesInvoiceLine.Type::" ");
         SalesInvoiceLine.Setfilter("Amount information L365", '<>0');
-        SalesInvoiceLine.ModifyAll("Line Type L365", SalesInvoiceLine."Line Type L365"::Fee);
+        SalesInvoiceLine.ModifyAll("Line Type L365", SalesInvoiceLine."Line Type L365"::Payment);
+        SalesInvoiceLine.setrange(Type, SalesInvoiceLine.Type::" ");
+        SalesInvoiceLine.Setfilter("Amount information L365", '0');
+        SalesInvoiceLine.ModifyAll("Line Type L365", SalesInvoiceLine."Line Type L365"::Comment);
 
         SalesCrMemoLine.reset;
         SalesCrMemoLine.Setfilter("Allocation No. L365", '<>%1', '');
@@ -87,7 +91,11 @@ codeunit 71115 "UpgradeCodeunits"
         SalesCrMemoLine.ModifyAll("Line Type L365", SalesInvoiceLine."Line Type L365"::Disbursement);
         SalesCrMemoLine.reset;
         SalesCrMemoLine.Setfilter("Amount information L365", '<>0');
-        SalesCrMemoLine.ModifyAll("Line Type L365", SalesInvoiceLine."Line Type L365"::Fee);
+        SalesCrMemoLine.ModifyAll("Line Type L365", SalesInvoiceLine."Line Type L365"::Payment);
+        SalesCrMemoLine.reset;
+        SalesCrMemoLine.SetRange(Type, SalesCrMemoLine.Type::" ");
+        SalesCrMemoLine.Setfilter("Amount information L365", '0');
+        SalesCrMemoLine.ModifyAll("Line Type L365", SalesInvoiceLine."Line Type L365"::Comment);
 
         if not UpgradeTag.HasUpgradeTag(ReasonLbl) then
             UpgradeTag.SetUpgradeTag(ReasonLbl);
@@ -253,6 +261,29 @@ codeunit 71115 "UpgradeCodeunits"
                     end;
                 end;
             until cont.Next() = 0;
+        end;
+        if not UpgradeTag.HasUpgradeTag(ReasonLbl) then
+            UpgradeTag.SetUpgradeTag(ReasonLbl);
+    end;
+
+    procedure PerformUpgradeSummaryCode()
+    var
+        ReasonLbl: Label 'Update SummaryCodes', Locked = true;
+        UpgradeTag: Codeunit "Upgrade Tag";
+        SummaryCode: Record "Summary Code L365";
+    begin
+        if SummaryCode.FindSet() then begin
+            repeat
+                if SummaryCode.Fee then
+                    SummaryCode."Line Type" := SummaryCode."Line Type"::Fee;
+                if SummaryCode."Disburs.VAT Prod. Posting Grp." <> '' then
+                    SummaryCode."Line Type" := SummaryCode."Line Type"::Disbursement;
+                if SummaryCode."Payment Default" then
+                    SummaryCode."Line Type" := SummaryCode."Line Type"::Payment;
+                if (not SummaryCode.Fee) and (SummaryCode."Disburs.VAT Prod. Posting Grp." = '') and (not SummaryCode."Payment Default") then
+                    SummaryCode."Line Type" := SummaryCode."Line Type"::Comment;
+                SummaryCode.Modify()
+            until SummaryCode.Next() = 0;
         end;
         if not UpgradeTag.HasUpgradeTag(ReasonLbl) then
             UpgradeTag.SetUpgradeTag(ReasonLbl);
