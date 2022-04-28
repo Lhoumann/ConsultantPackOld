@@ -8,7 +8,7 @@ report 71100 "ImportSharePointWebsitesL365CP"
     UsageCategory = Tasks;
     ApplicationArea = All;
     ProcessingOnly = true;
-    UseRequestPage = false;
+    UseRequestPage = true;
 
     requestpage
     {
@@ -21,6 +21,12 @@ report 71100 "ImportSharePointWebsitesL365CP"
                 group(Options)
                 {
                     Caption = 'Options';
+                    field(ClientNoPrefixRemoval; ClientNoPrefixRemoval)
+                    {
+                        Caption = 'Client No. Prefix to be Removed';
+                        ApplicationArea = All;
+                        ToolTip = 'SharePoint Site URL usually consists of a Client No. But during tests the Site URLs may be constructed from Client No with a text prefix e.g. "Test1-". Please specify the prefix here og blank if no prefix is used. It will be used by this import tyo identify the actual client No. in the ProjectNumber field in the CSV file.';
+                    }
                 }
             }
         }
@@ -40,6 +46,7 @@ report 71100 "ImportSharePointWebsitesL365CP"
         FileName: Text;
         InStr: InStream;
         FileSelectionMsg: Label 'Please choose the Client Id CSV file.';
+        ClientNoPrefixRemoval: Text;
 
     trigger OnPreReport()
     var
@@ -95,6 +102,11 @@ report 71100 "ImportSharePointWebsitesL365CP"
                     SiteName := TextFields.Get(3); // danske bogstaver er fucked up her
                     SiteIdText := TextFields.Get(4);
                     CompanyNo := TextFields.Get(5);
+                    if ClientNoPrefixRemoval <> '' then begin
+                        if not CompanyNo.StartsWith(ClientNoPrefixRemoval) then
+                            Error('Project Number %1 does not begin with expected prefix: %2', CompanyNo, ClientNoPrefixRemoval);
+                        CompanyNo := CompanyNo.Remove(1, StrLen(ClientNoPrefixRemoval));
+                    end;
                     If not Evaluate(CreationTime, CreationTimeText) then
                         ErrorText += StrSubstNo('Could not evaluate field 1 Creation Time as DateTime: %1. \', CreationTimeText);
                     if not Evaluate(SiteId, SiteIdText) then
@@ -124,7 +136,7 @@ report 71100 "ImportSharePointWebsitesL365CP"
                     SPSite.Validate("Site URL", CompanyNo);
                     SPSite.Validate("Creation Time", CreationTime);
                     SPSite.Validate("Site ID", SiteId);
-                    SPSite.Validate("SharePoint Site URL", SPSetup."SharePoint Location" + SPSite."Site URL"); // Nescessary??
+                    SPSite.Validate("SharePoint Site URL", SPSetup."SharePoint Location" + 'sites/' + SPSite."Site URL"); // Nescessary??
                     SPSite.Validate("Site Graph Full Id", SharePointHostName + ',' + SiteCollectionIdText + ',' + SiteIdText);
                     SPSite.Validate("Hub Site ID", SPSetup."Hub Site ID"); // Nescessary !!
                     SPSite.Validate("Client Document Library", SPSetup."Client Document Repository");
