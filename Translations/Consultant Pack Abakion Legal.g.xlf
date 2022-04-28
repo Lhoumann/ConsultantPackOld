@@ -993,6 +993,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Consultant Pack CP L365 - Action A3111260 - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 2926099763 - Action 3942595503 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update Summary Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Consultant Pack CP L365 - Action SummaryUpdate - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2926099763 - Action 3219844893 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>584 - Update Split percentages</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1747,16 +1752,6 @@
           <source>Options</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report ImportSharePointWebsitesL365CP - Control Options - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 1552667709 - Control 1765522786 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>SharePoint Site URL usually consists of a Client No. But during tests the Site URLs may be constructed from Client No with a text prefix e.g. "Test1-". Please specify the prefix here og blank if no prefix is used. It will be used by this import tyo identify the actual client No. in the ProjectNumber field in the CSV file.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report ImportSharePointWebsitesL365CP - Control ClientNoPrefixRemoval - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 1552667709 - Control 1765522786 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Client No. Prefix to be Removed</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report ImportSharePointWebsitesL365CP - Control ClientNoPrefixRemoval - Property Caption</note>
         </trans-unit>
         <trans-unit id="XmlPort 2180994875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>FIK Parties update L365</source>
